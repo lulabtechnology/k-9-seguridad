@@ -17,9 +17,9 @@ function HeroOperational() {
       <div className="container hero__content">
         <div className="hero__copy">
           <span className="eyebrow"><ShieldCheck size={18} /> Seguridad logística especializada en Colón</span>
-          <h1>Vigilancia e inspección K9 para cargas que no pueden fallar.</h1>
+          <h1>Vigilancia e inspección K9 para cargas críticas en Colón.</h1>
           <p>
-            Servicio de seguridad para bodegas, puertos, camiones y empresas logísticas que manejan mercancía de importación y exportación dentro de Colón y la Zona Libre.
+            Servicios de vigilancia, inspección canina y control preventivo para bodegas, puertos, camiones y empresas logísticas que manejan mercancía de importación y exportación en Colón y Zona Libre.
           </p>
           <div className="hero__buttons">
             <Link className="btn btn--primary" href={whatsappHref('Hola, deseo solicitar una inspección K9 o servicio de vigilancia para carga.')}>
@@ -36,7 +36,7 @@ function HeroOperational() {
             <div><Dog size={24} /><strong>K9</strong><span>Inspección canina de cargas</span></div>
             <div><Truck size={24} /><strong>Carga</strong><span>Aérea, terrestre y marítima</span></div>
             <div><Building2 size={24} /><strong>Bodegas</strong><span>Vigilancia en áreas logísticas</span></div>
-            <div><Award size={24} /><strong>BASC</strong><span>Respaldo documental compartido</span></div>
+            <div><Award size={24} /><strong>BASC</strong><span>Certificación documentada</span></div>
           </div>
         </div>
       </div>

@@ -21,7 +21,7 @@ export default function ServiciosPage() {
         <div className="container page-hero__content">
           <span className="eyebrow">Servicios</span>
           <h1>Vigilancia, inspección K9 y control de mercancía para empresas logísticas.</h1>
-          <p>Servicios diseñados para atraer búsquedas específicas de clientes que necesitan seguridad en bodegas, puertos, contenedores, camiones y carga comercial.</p>
+          <p>Servicios para empresas que necesitan vigilancia en bodegas, inspección de contenedores, revisión K9 y control preventivo de mercancía.</p>
         </div>
       </section>
 
@@ -29,8 +29,8 @@ export default function ServiciosPage() {
         <div className="container">
           <SectionIntro
             eyebrow="Soluciones especializadas"
-            title="Cada servicio tiene su propia página SEO para competir mejor en Google."
-            text="La estructura evita depender de una sola página y permite posicionar búsquedas por tipo de necesidad, sector y ubicación."
+            title="Servicios especializados para operaciones logísticas sensibles."
+            text="Cada solución se presenta con su aplicación operativa para que el cliente identifique rápidamente el apoyo que necesita."
             align="center"
           />
           <div className="cards-grid cards-grid--services">

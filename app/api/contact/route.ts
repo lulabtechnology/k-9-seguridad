@@ -51,12 +51,12 @@ export async function POST(request: Request) {
     );
 
     return NextResponse.json({
-      message: 'Solicitud preparada. Configure un webhook para envío automático o use el correo definido en producción.',
+      message: 'Solicitud preparada. Se abrirá el correo para enviar los datos al equipo de atención.',
       mailto: `mailto:${mailTo}?subject=${subject}&body=${text}`
     });
   }
 
   return NextResponse.json({
-    message: 'Solicitud preparada correctamente. Active CONTACT_WEBHOOK_URL o CONTACT_EMAIL_TO en Vercel para recibirla automáticamente.'
-  });
+    message: 'El formulario necesita un correo o WhatsApp confirmado de K9 Security para recibir solicitudes.'
+  }, { status: 503 });
 }

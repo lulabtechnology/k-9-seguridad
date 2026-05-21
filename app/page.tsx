@@ -33,7 +33,7 @@ export default function HomePage() {
           <SectionIntro
             eyebrow="Servicios principales"
             title="Control preventivo para bodegas, puertos, camiones y mercancía."
-            text="Cada servicio fue estructurado para responder a búsquedas reales de empresas logísticas en Panamá y Colón, sin depender de textos genéricos."
+            text="Soluciones enfocadas en vigilancia, inspección canina, control de contenedores y verificación de mercancía para operaciones que requieren prevención real."
             align="center"
           />
           <div className="cards-grid cards-grid--services">
@@ -49,7 +49,7 @@ export default function HomePage() {
           <div>
             <span className="eyebrow eyebrow--gold">Método de operación</span>
             <h2>Un proceso claro para intervenir sin desordenar la operación del cliente.</h2>
-            <p>La web comunica una metodología simple, profesional y fácil de entender para empresas que necesitan seguridad sin improvisaciones.</p>
+            <p>Cada servicio se coordina según el punto de revisión, el tipo de carga y el nivel de control que requiere la empresa.</p>
           </div>
           <div className="process-list">
             {processSteps.map((step, index) => {
@@ -71,8 +71,8 @@ export default function HomePage() {
         <div className="container">
           <SectionIntro
             eyebrow="Sectores atendidos"
-            title="Una web pensada para atraer empresas de logística, bodegas y comercio internacional."
-            text="El contenido se enfoca en sectores que realmente pueden necesitar vigilancia, inspección K9 y control de mercancía."
+            title="Atención para empresas de logística, bodegas y comercio internacional."
+            text="La operación atiende entornos donde la mercancía debe moverse con control, trazabilidad y presencia preventiva."
             align="center"
           />
           <div className="sector-grid">
@@ -113,7 +113,7 @@ export default function HomePage() {
                 );
               })}
             </div>
-            <p className="note"><strong>Nota:</strong> para afirmar vigencia pública en producción, se debe cargar el certificado renovado correspondiente.</p>
+            <p className="note"><strong>Información documental:</strong> el certificado recibido indica expedición 2024-11-22 y vencimiento 2025-11-22. Esta sección mantiene los datos visibles con transparencia.</p>
             <Link className="btn btn--secondary" href="/basc">Ver sección BASC</Link>
           </div>
         </div>

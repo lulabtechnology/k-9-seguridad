@@ -26,7 +26,7 @@ export function Footer() {
           </ul>
         </div>
         <div>
-          <h3>Servicios SEO</h3>
+          <h3>Servicios especializados</h3>
           <ul>
             {services.slice(0, 5).map((service) => (
               <li key={service.slug}>

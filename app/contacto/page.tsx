@@ -32,7 +32,7 @@ export default function ContactoPage() {
             <SectionIntro
               eyebrow="Solicitud comercial"
               title="Atención para empresas logísticas, bodegas, puertos y carga terrestre."
-              text="Formulario preparado para recibir solicitudes comerciales desde Vercel mediante webhook o correo corporativo confirmado por la empresa."
+              text="Indique el tipo de carga, ubicación, horario, urgencia y servicio requerido para orientar correctamente la solicitud."
             />
             <div className="contact-cards">
               <article>

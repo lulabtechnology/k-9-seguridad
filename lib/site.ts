@@ -23,8 +23,8 @@ export const site = {
   name: 'K9 Security International, S.A.',
   shortName: 'K9 Security',
   legalName: 'K9 Security International, S.A.',
-  logo: '/brand/k9-security-logo.svg',
-  domain: process.env.NEXT_PUBLIC_SITE_URL || 'https://k9-security-international.vercel.app',
+  logo: '/brand/k9-logo-original.png',
+  domain: process.env.NEXT_PUBLIC_SITE_URL || 'https://k-9-seguridad.vercel.app',
   location: 'France Field, Ave. 4, Zona Libre de Colón, Colón, República de Panamá',
   city: 'Colón, Panamá',
   description:
@@ -254,7 +254,7 @@ export const faqs = [
   {
     question: '¿Qué significa el respaldo BASC en esta web?',
     answer:
-      'La certificación BASC se presenta como parte del historial documental compartido por la empresa. Para afirmar vigencia pública, debe cargarse el certificado renovado correspondiente.'
+      'El respaldo BASC se muestra con los datos del documento recibido, incluyendo fecha de expedición, vencimiento y número de certificación, para mantener una comunicación clara y verificable.'
   }
 ];
 
@@ -268,7 +268,7 @@ export const trustSignals = [
 export const certifications = [
   {
     title: 'Norma BASC',
-    text: 'Documento compartido bajo BASC International Norm and Standards, versión 6-2022.',
+    text: 'Documento BASC International Norm and Standards, versión 6-2022, asociado a servicios de custodia, vigilancia privada e inspección canina.',
     icon: Award
   },
   {
@@ -278,7 +278,7 @@ export const certifications = [
   },
   {
     title: 'Cobertura operativa',
-    text: 'Servicio orientado a cargas, bodegas, puertos, camiones y procesos de verificación.',
+    text: 'Cobertura para cargas, bodegas, puertos, camiones y procesos donde se requiere control preventivo y evidencia operativa.',
     icon: CheckCircle2
   }
 ];

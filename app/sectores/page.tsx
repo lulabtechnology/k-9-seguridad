@@ -22,7 +22,7 @@ export default function SectoresPage() {
         <div className="container page-hero__content">
           <span className="eyebrow">Sectores atendidos</span>
           <h1>Seguridad para empresas que mueven mercancía de importación y exportación.</h1>
-          <p>La web está estructurada para responder a necesidades reales de logística, bodegas, puertos, transporte y operaciones dentro de Colón.</p>
+          <p>Atención para entornos de logística, bodegas, puertos, transporte y operaciones comerciales dentro de Colón y Zona Libre.</p>
         </div>
       </section>
 
@@ -31,7 +31,7 @@ export default function SectoresPage() {
           <SectionIntro
             eyebrow="Cobertura comercial"
             title="Sectores donde el control preventivo puede hacer la diferencia."
-            text="Cada bloque comunica una aplicación concreta de los servicios y ayuda a Google a entender el alcance de la empresa."
+            text="Cada sector requiere controles distintos: acceso, inspección, verificación de carga, custodia preventiva y seguimiento operativo."
             align="center"
           />
           <div className="sector-grid sector-grid--wide">
@@ -52,9 +52,9 @@ export default function SectoresPage() {
       <section className="section section--light">
         <div className="container split-grid">
           <SectionIntro
-            eyebrow="Enlaces internos para SEO"
-            title="Las páginas de servicio conectan sectores con búsquedas específicas."
-            text="Esta arquitectura ayuda a competir contra sitios que solo tienen una página general sin contenido por servicio."
+            eyebrow="Servicios relacionados"
+            title="Cada sector puede requerir una combinación distinta de servicios."
+            text="La empresa puede atender necesidades puntuales según el tipo de mercancía, ubicación, riesgo operativo y proceso logístico del cliente."
           />
           <div className="link-list-panel">
             {services.map((service) => (

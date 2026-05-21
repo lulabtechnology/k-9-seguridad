@@ -24,6 +24,9 @@ export function ContactForm() {
       });
       const data = await response.json();
       if (!response.ok) throw new Error(data?.message || 'No se pudo enviar la solicitud.');
+      if (data?.mailto) {
+        window.location.href = data.mailto;
+      }
       setStatus('sent');
       setMessage(data.message || 'Solicitud recibida correctamente.');
       event.currentTarget.reset();

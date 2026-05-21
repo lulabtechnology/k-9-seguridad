@@ -8,7 +8,7 @@ import { certifications, site } from '@/lib/site';
 export const metadata: Metadata = {
   title: 'Certificación BASC y respaldo documental',
   description:
-    'Sección de respaldo BASC de K9 Security International, con certificado compartido, datos documentales y nota de vigencia para producción.'
+    'Respaldo BASC de K9 Security International, con certificado, número documental, fecha de expedición y datos de vencimiento visibles.'
 };
 
 export default function BascPage() {
@@ -22,7 +22,7 @@ export default function BascPage() {
         <div className="container page-hero__content">
           <span className="eyebrow"><Award size={18} /> BASC</span>
           <h1>Respaldo documental para operaciones de seguridad logística.</h1>
-          <p>Sección preparada para presentar de forma profesional la certificación y la relación de la empresa con estándares internacionales de seguridad.</p>
+          <p>Documento de respaldo para clientes que requieren evidencia de controles, auditoría y compromiso con estándares internacionales de seguridad.</p>
         </div>
       </section>
 
@@ -35,7 +35,7 @@ export default function BascPage() {
             <SectionIntro
               eyebrow="Documento compartido"
               title="Certificación BASC asociada a K9 Security International, S.A."
-              text="El documento se integra como respaldo visual y descargable. La redacción evita afirmar vigencia hasta cargar el certificado renovado correspondiente."
+              text="El documento se presenta con número de certificación, fecha de expedición, vencimiento y norma indicada, manteniendo la información visible de forma clara."
             />
             <div className="doc-facts">
               <div><strong>Certificación No.</strong><span>{site.basc.certificateNumber}</span></div>
@@ -45,7 +45,7 @@ export default function BascPage() {
             </div>
             <div className="warning-box">
               <AlertTriangle size={22} />
-              <p>Antes de publicar la frase “certificación vigente”, el cliente debe entregar el certificado actualizado. Esta versión conserva el respaldo sin comprometer legalmente el contenido.</p>
+              <p>El certificado recibido indica vencimiento 2025-11-22. La sección mantiene el dato visible para que la información documental sea transparente.</p>
             </div>
             <Link href={site.basc.pdf} className="btn btn--primary" target="_blank" rel="noopener noreferrer">
               Descargar certificado <Download size={18} />
@@ -58,8 +58,8 @@ export default function BascPage() {
         <div className="container">
           <SectionIntro
             eyebrow="Compromiso con estándares"
-            title="La sección BASC suma confianza sin exagerar el alcance del documento."
-            text="El contenido está redactado para reforzar credibilidad en clientes logísticos, importadores, exportadores y empresas con procesos de control."
+            title="BASC fortalece la confianza en operaciones de seguridad logística."
+            text="El respaldo documental es relevante para clientes logísticos, importadores, exportadores y empresas con procesos de control dentro de su cadena de suministro."
             align="center"
           />
           <div className="cert-grid cert-grid--large">
@@ -76,7 +76,7 @@ export default function BascPage() {
             <article>
               <FileCheck2 size={28} />
               <h3>Descargable</h3>
-              <p>El PDF queda disponible dentro del sitio para facilitar validación comercial cuando la empresa decida mostrarlo públicamente.</p>
+              <p>El PDF queda disponible para consulta directa de clientes, aliados y responsables de seguridad que necesiten revisar el documento.</p>
             </article>
           </div>
         </div>

@@ -62,13 +62,13 @@ export default async function ServiceDetailPage({ params }: PageProps) {
             <span className="eyebrow">Aplicación del servicio</span>
             <h2>Diseñado para operaciones donde la prevención debe ser visible y documentable.</h2>
             <p>
-              Este servicio puede integrarse en procesos de recepción, almacenamiento, inspección, despacho o traslado de mercancía. La página fue redactada para atraer búsquedas de alto valor sin usar afirmaciones exageradas ni textos genéricos.
+              Este servicio puede integrarse en procesos de recepción, almacenamiento, inspección, despacho o traslado de mercancía. La coordinación se adapta al punto de revisión, tipo de carga, horario operativo y nivel de control que la empresa requiere.
             </p>
             <ul className="check-list">
               <li><ShieldCheck size={18} /> Refuerza controles internos de seguridad.</li>
               <li><ShieldCheck size={18} /> Apoya operaciones logísticas con movimiento de carga.</li>
-              <li><ShieldCheck size={18} /> Comunica profesionalismo frente a clientes y aliados.</li>
-              <li><ShieldCheck size={18} /> Conecta con búsquedas locales de Panamá, Colón y Zona Libre.</li>
+              <li><ShieldCheck size={18} /> Aporta evidencia operativa para clientes, aliados y responsables de seguridad.</li>
+              <li><ShieldCheck size={18} /> Se enfoca en operaciones dentro de Panamá, Colón y Zona Libre.</li>
             </ul>
           </div>
           <ContactForm />

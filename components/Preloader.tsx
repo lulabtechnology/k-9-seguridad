@@ -24,8 +24,8 @@ export function Preloader() {
   return (
     <div className="preloader" role="status" aria-label="Cargando sitio">
       <div className="preloader__ring" />
-      <Image src={site.logo} alt={site.name} width={270} height={78} priority />
-      <p>Seguridad logística en operación</p>
+      <Image src={site.logo} alt={site.name} width={156} height={156} priority />
+      <p>K9 Security International</p>
     </div>
   );
 }

@@ -52,7 +52,7 @@ export default function EmpresaPage() {
           <article>
             <Award size={32} />
             <h2>Respaldo documental</h2>
-            <p>El sitio integra la referencia BASC compartida por la empresa, cuidando la redacción para no afirmar vigencia si no se carga el documento actualizado.</p>
+            <p>La empresa cuenta con respaldo documental BASC asociado a procesos de seguridad, vigilancia privada e inspección canina, con datos de expedición y vencimiento visibles para consulta.</p>
           </article>
           <article>
             <ShieldCheck size={32} />
@@ -66,7 +66,7 @@ export default function EmpresaPage() {
         <div className="container process-grid">
           <div>
             <span className="eyebrow eyebrow--gold">Cómo trabajamos</span>
-            <h2>Una operación que se entiende rápido y se puede explicar al cliente final.</h2>
+            <h2>Una operación ordenada para intervenir sin detener la actividad logística del cliente.</h2>
           </div>
           <div className="process-list">
             {processSteps.map((step, index) => {
@@ -87,7 +87,7 @@ export default function EmpresaPage() {
       <section className="section">
         <div className="container final-cta">
           <h2>Refuerce su operación logística con seguridad especializada.</h2>
-          <p>El sitio fue construido para convertir tráfico local y búsquedas de alto valor en solicitudes de servicios de vigilancia e inspección K9.</p>
+          <p>La empresa puede apoyar operaciones donde la prevención, el control de accesos, la inspección de carga y la evidencia operativa son factores críticos.</p>
           <Link className="btn btn--primary" href={whatsappHref('Hola, deseo información sobre K9 Security International y sus servicios para empresas logísticas.')}>
             Solicitar información
           </Link>
