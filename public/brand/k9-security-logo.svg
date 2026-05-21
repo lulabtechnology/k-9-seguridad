@@ -1,0 +1,23 @@
+<svg width="720" height="210" viewBox="0 0 720 210" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+<title id="title">K9 Security International</title>
+<desc id="desc">Logotipo corporativo para K9 Security International</desc>
+<defs>
+  <linearGradient id="g1" x1="38" y1="18" x2="168" y2="190" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#2f87ff"/>
+    <stop offset="0.55" stop-color="#0b3a78"/>
+    <stop offset="1" stop-color="#06152f"/>
+  </linearGradient>
+  <linearGradient id="g2" x1="40" y1="80" x2="180" y2="170" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#f7d57d"/>
+    <stop offset="1" stop-color="#b0832d"/>
+  </linearGradient>
+</defs>
+<path d="M106 14L177 42V93C177 141 147 178 106 195C65 178 35 141 35 93V42L106 14Z" fill="url(#g1)" stroke="#d9a941" stroke-width="5"/>
+<path d="M72 117C87 105 99 93 112 77C122 64 133 54 150 54C143 62 136 74 138 88C140 105 154 116 164 121C145 122 125 118 106 109C92 121 83 136 69 149C67 136 66 126 72 117Z" fill="url(#g2)" opacity="0.95"/>
+<path d="M78 72H61V138H78V112L98 138H120L93 104L118 72H97L78 98V72Z" fill="white"/>
+<path d="M133 72C117 72 106 82 106 97C106 113 118 121 132 121C138 121 143 119 148 116C145 129 136 137 121 140V156C150 152 166 133 166 103C166 83 153 72 133 72ZM134 89C143 89 149 95 149 103C149 111 143 116 134 116C125 116 119 110 119 102C119 94 125 89 134 89Z" fill="white"/>
+<text x="210" y="92" font-family="Inter, Arial, sans-serif" font-weight="800" font-size="46" fill="#06152f" letter-spacing="-1.5">K9 SECURITY</text>
+<text x="212" y="136" font-family="Inter, Arial, sans-serif" font-weight="700" font-size="30" fill="#0b3a78" letter-spacing="1.5">INTERNATIONAL, S.A.</text>
+<rect x="212" y="154" width="320" height="4" rx="2" fill="#d9a941"/>
+<text x="212" y="184" font-family="Inter, Arial, sans-serif" font-weight="600" font-size="18" fill="#5b6678" letter-spacing=".6">Vigilancia · Inspección K9 · Seguridad logística</text>
+</svg>
