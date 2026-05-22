@@ -28,7 +28,7 @@ export const site = {
   location: 'France Field, Ave. 4, Zona Libre de Colón, Colón, República de Panamá',
   city: 'Colón, Panamá',
   description:
-    'Empresa de seguridad especializada en vigilancia, inspección K9 de cargas y control preventivo para operaciones logísticas en Colón, Zona Libre, puertos, bodegas y rutas de carga.',
+    'Agencia de seguridad registrada en la DIASP, especializada en vigilancia 24 horas, custodia de mercancía e inspección K9 de cargas para bodegas, puertos, aeropuertos, contenedores, furgones y camiones en Colón y a nivel nacional.',
   heroVariant: 'operativo' as 'operativo' | 'institucional',
   whatsapp: process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '',
   email: process.env.NEXT_PUBLIC_CONTACT_EMAIL || '',
@@ -70,60 +70,60 @@ export const services: Service[] = [
     title: 'Inspección K9 de cargas',
     eyebrow: 'Prevención y control especializado',
     summary:
-      'Revisión con unidades caninas para cargas de importación y exportación en bodegas, camiones, contenedores y áreas operativas.',
+      'Revisión con unidades caninas para cargas de importación y exportación en bodegas, contenedores, camiones, furgones y áreas operativas.',
     description:
-      'Servicio de inspección canina para operaciones logísticas que necesitan verificar cargas antes, durante o después de procesos de traslado, almacenamiento o despacho. El enfoque está orientado a reducir riesgos relacionados con sustancias ilícitas y reforzar los controles de seguridad de la cadena logística.',
+      'Servicio de inspección canina para operaciones logísticas que necesitan verificar cargas antes, durante o después de procesos de almacenamiento, movilización o despacho. La operación está orientada a fortalecer controles contra contaminación de mercancía con sustancias ilícitas y a reforzar la seguridad de la cadena logística.',
     icon: Dog,
     image: '/images/k9/hero-operativo.webp',
-    highlights: ['Cargas de importación y exportación', 'Unidades caninas en operación', 'Apoyo preventivo en zonas críticas'],
-    seoTitle: 'Inspección K9 de cargas en Panamá y Colón | K9 Security International',
+    highlights: ['Bodegas, contenedores y camiones', 'Carga aérea, terrestre y marítima', 'Apoyo preventivo con unidades K9'],
+    seoTitle: 'Inspección K9 de cargas en Panamá | K9 Security International',
     seoDescription:
-      'Inspección K9 de cargas para empresas logísticas, bodegas, camiones, contenedores y operaciones de importación y exportación en Panamá y Colón.'
+      'Inspección K9 de cargas para empresas logísticas, bodegas, camiones, contenedores, furgones y operaciones de importación y exportación en Panamá y Colón.'
   },
   {
     slug: 'vigilancia-bodegas-zona-libre-colon',
-    title: 'Vigilancia en bodegas',
-    eyebrow: 'Zona Libre y centros logísticos',
+    title: 'Vigilancia y seguridad 24 horas',
+    eyebrow: 'Bodegas, patios y puntos de control',
     summary:
-      'Servicio de vigilancia para bodegas, recintos de almacenamiento y áreas de operación dentro de entornos logísticos.',
+      'Servicio de seguridad 24 horas para bodegas, patios, contenedores, furgones, camiones y áreas de operación logística.',
     description:
-      'Cobertura de vigilancia enfocada en bodegas y áreas donde se administra mercancía de alto movimiento. El servicio ayuda a controlar accesos, supervisar áreas sensibles y mantener presencia preventiva en espacios donde se maneja carga comercial.',
+      'Cobertura de vigilancia para empresas que necesitan presencia preventiva, control de accesos y supervisión operativa continua. El servicio puede aplicarse en bodegas, patios de carga, recintos industriales, contenedores, furgones y camiones vinculados al movimiento de mercancía.',
     icon: Warehouse,
-    image: '/images/k9/vigilancia-bodega.webp',
-    highlights: ['Control preventivo', 'Presencia en bodegas', 'Apoyo para operaciones logísticas'],
-    seoTitle: 'Vigilancia para bodegas en Zona Libre de Colón | K9 Security',
+    image: '/images/k9/inspeccion-bodega-negra.webp',
+    highlights: ['Servicio de seguridad 24 horas', 'Bodegas, contenedores, furgones y camiones', 'Control de accesos y supervisión operativa'],
+    seoTitle: 'Vigilancia y seguridad 24 horas para bodegas en Panamá | K9 Security',
     seoDescription:
-      'Vigilancia especializada para bodegas y empresas logísticas en Zona Libre de Colón, con enfoque preventivo y operativo.'
+      'Vigilancia y seguridad 24 horas para bodegas, patios, contenedores, furgones y camiones en Colón y a nivel nacional.'
   },
   {
     slug: 'inspeccion-contenedores-colon',
-    title: 'Inspección de contenedores y camiones',
+    title: 'Inspección de contenedores, furgones y camiones',
     eyebrow: 'Carga terrestre y marítima',
     summary:
-      'Revisión preventiva de contenedores, remolques, camiones y vehículos de carga en puntos operativos.',
+      'Revisión preventiva de contenedores, furgones, remolques, camiones y vehículos de carga en puntos operativos.',
     description:
-      'Inspección de unidades de transporte y áreas relacionadas con carga terrestre y marítima. El servicio está pensado para operaciones que requieren una verificación adicional antes de ingreso, salida, descarga o movimiento interno de mercancía.',
+      'Servicio pensado para operaciones que requieren una verificación adicional en unidades de transporte antes de ingreso, salida, descarga o movimiento interno de mercancía. Permite reforzar la seguridad de la carga y mantener controles visibles sobre los equipos de transporte.',
     icon: Container,
     image: '/images/k9/inspeccion-camion-rojo.webp',
-    highlights: ['Camiones y remolques', 'Contenedores', 'Puntos de ingreso y salida'],
-    seoTitle: 'Inspección de contenedores y camiones en Colón | K9 Security',
+    highlights: ['Contenedores y remolques', 'Furgones y camiones', 'Puntos de ingreso, salida y tránsito'],
+    seoTitle: 'Inspección de contenedores, furgones y camiones en Panamá | K9 Security',
     seoDescription:
-      'Inspección de contenedores, camiones y vehículos de carga para operaciones logísticas en Colón y Panamá.'
+      'Inspección de contenedores, furgones, camiones y vehículos de carga para operaciones logísticas en Colón y Panamá.'
   },
   {
     slug: 'seguridad-logistica-panama',
     title: 'Seguridad logística integral',
     eyebrow: 'Aérea, terrestre y marítima',
     summary:
-      'Apoyo de seguridad para operaciones de carga aérea, terrestre y marítima en empresas de logística, puertos y zonas de almacenamiento.',
+      'Apoyo de seguridad para operaciones de carga aérea, terrestre y marítima en empresas de logística, puertos, aeropuertos y zonas de almacenamiento.',
     description:
-      'Servicio orientado a empresas que necesitan reforzar la seguridad dentro de su cadena logística, incluyendo áreas de carga, bodegas, puertos, rutas terrestres y procesos operativos donde la prevención es crítica.',
+      'Servicio orientado a empresas que necesitan reforzar la seguridad dentro de su cadena logística, incluyendo áreas de carga, bodegas, puertos, aeropuertos, rutas terrestres y procesos donde la prevención es crítica.',
     icon: ShieldCheck,
     image: '/images/k9/inspeccion-puerto.webp',
-    highlights: ['Carga aérea', 'Carga terrestre', 'Carga marítima'],
+    highlights: ['Carga aérea', 'Carga terrestre', 'Carga marítima y zonas francas'],
     seoTitle: 'Seguridad logística en Panamá | K9 Security International',
     seoDescription:
-      'Seguridad logística para empresas de importación, exportación, bodegas, puertos y transporte en Panamá y Colón.'
+      'Seguridad logística para empresas de importación, exportación, bodegas, puertos, aeropuertos y transporte en Panamá.'
   },
   {
     slug: 'verificacion-mercancia-danada',
@@ -132,28 +132,58 @@ export const services: Service[] = [
     summary:
       'Acompañamiento para verificar mercancía dañada, procesos de descarte y eliminación supervisada cuando la operación lo requiere.',
     description:
-      'Servicio de verificación para situaciones donde se requiere confirmar el estado de mercancía dañada o dar seguimiento a procesos de eliminación y descarte, manteniendo control operativo y soporte visual cuando aplique.',
+      'Servicio de verificación para situaciones donde se requiere confirmar el estado de mercancía dañada o dar seguimiento a procesos de eliminación, destrucción o descarte, manteniendo control operativo y soporte visual cuando aplique.',
     icon: ClipboardCheck,
     image: '/images/k9/inspeccion-caja.webp',
-    highlights: ['Mercancía dañada', 'Descarte supervisado', 'Soporte de verificación'],
+    highlights: ['Mercancía dañada', 'Descarte y eliminación supervisada', 'Soporte de verificación'],
     seoTitle: 'Verificación de mercancía dañada en Panamá | K9 Security',
     seoDescription:
       'Verificación de mercancía dañada, descarte supervisado y control operativo para empresas logísticas en Panamá.'
   },
   {
     slug: 'servicios-k9-para-puertos-bodegas',
-    title: 'Servicios K9 para puertos y bodegas',
+    title: 'Inspección de bodegas, puertos y parques industriales',
     eyebrow: 'Operaciones críticas',
     summary:
-      'Despliegue de unidades K9 para inspecciones en puertos, bodegas, patios de carga y áreas de almacenamiento.',
+      'Despliegue de unidades K9 para inspecciones en bodegas, puertos, patios de carga, parques industriales y áreas de almacenamiento.',
     description:
-      'Servicio especializado para empresas que manejan mercancía en ambientes portuarios o de bodega, con inspecciones orientadas a reforzar controles preventivos y apoyar el cumplimiento de protocolos internos de seguridad.',
+      'Servicio especializado para empresas que manejan mercancía en ambientes portuarios, parques industriales o de bodega, con inspecciones orientadas a reforzar controles preventivos y apoyar el cumplimiento de protocolos internos de seguridad.',
     icon: Anchor,
-    image: '/images/k9/inspeccion-bodega.webp',
-    highlights: ['Puertos', 'Patios de carga', 'Bodegas y almacenes'],
-    seoTitle: 'Servicios K9 para puertos y bodegas en Panamá | K9 Security',
+    image: '/images/k9/inspeccion-pallets.webp',
+    highlights: ['Bodegas y almacenes', 'Puertos y patios de carga', 'Parques industriales'],
+    seoTitle: 'Inspección K9 en puertos, bodegas y parques industriales | K9 Security',
     seoDescription:
-      'Servicios K9 para inspección preventiva en puertos, bodegas, patios de carga y operaciones logísticas en Panamá.'
+      'Servicios K9 para inspección preventiva en puertos, bodegas, patios de carga y parques industriales en Panamá.'
+  },
+  {
+    slug: 'custodia-mercancia-y-transportes',
+    title: 'Custodia de mercancía y transportes',
+    eyebrow: 'Mercancía en movimiento',
+    summary:
+      'Custodia de contenedores, camiones y furgones hacia puertos, aeropuertos y otros puntos de entrega para distintos tipos de mercancía.',
+    description:
+      'Servicio de custodia para mercancía y transportes durante traslados operativos, incluyendo contenedores, camiones y furgones que deben movilizarse hacia aeropuertos, puertos, bodegas u otros destinos. Está diseñado para reforzar control, acompañamiento y seguridad durante la ruta.',
+    icon: Truck,
+    image: '/images/k9/custodia-operador.webp',
+    highlights: ['Custodia de contenedores, camiones y furgones', 'Traslados hacia puertos y aeropuertos', 'Acompañamiento para distintos tipos de mercancía'],
+    seoTitle: 'Custodia de mercancía y transportes en Panamá | K9 Security',
+    seoDescription:
+      'Custodia de mercancía y transportes para contenedores, camiones y furgones hacia puertos, aeropuertos y bodegas en Panamá.'
+  },
+  {
+    slug: 'custodia-bodega-a-bodega',
+    title: 'Custodia de bodega a bodega',
+    eyebrow: 'Traslado con control',
+    summary:
+      'Servicio de custodia y acompañamiento para mercancía que se moviliza de una bodega a otra dentro de la operación del cliente.',
+    description:
+      'Solución orientada a empresas que requieren trasladar mercancía entre bodegas o centros operativos con acompañamiento de seguridad y control preventivo. Facilita un movimiento más ordenado y respaldado en trayectos internos o entre puntos logísticos.',
+    icon: Boxes,
+    image: '/images/k9/custodia-mercancia.webp',
+    highlights: ['Movimiento entre bodegas', 'Control preventivo en traslado', 'Acompañamiento operativo'],
+    seoTitle: 'Custodia de bodega a bodega en Panamá | K9 Security',
+    seoDescription:
+      'Custodia de bodega a bodega para movimientos de mercancía entre centros logísticos, almacenes y puntos operativos en Panamá.'
   }
 ];
 
@@ -170,9 +200,14 @@ export const sectors: Sector[] = [
     icon: Truck
   },
   {
-    title: 'Zona Libre de Colón',
-    summary: 'Empresas ubicadas en un entorno de alto movimiento comercial y tránsito de mercancía.',
+    title: 'Importadores y exportadores',
+    summary: 'Empresas que requieren control preventivo y seguridad sobre mercancía en movimiento o almacenada.',
     icon: Building2
+  },
+  {
+    title: 'Bodegas y centros de almacenamiento',
+    summary: 'Vigilancia, inspección y custodia en áreas donde se recibe, organiza o despacha mercancía.',
+    icon: Warehouse
   },
   {
     title: 'Puertos y carga marítima',
@@ -180,89 +215,123 @@ export const sectors: Sector[] = [
     icon: Ship
   },
   {
-    title: 'Carga aérea',
-    summary: 'Apoyo preventivo para mercancía que requiere trazabilidad y revisiones de seguridad.',
+    title: 'Carga aérea y aeropuerto de cargas',
+    summary: 'Apoyo para mercancía que requiere trazabilidad y revisiones de seguridad en terminales o áreas aeroportuarias.',
     icon: Plane
   },
   {
-    title: 'Bodegas y centros de almacenamiento',
-    summary: 'Vigilancia e inspección en áreas donde se recibe, organiza o despacha mercancía.',
-    icon: Boxes
+    title: 'Parques industriales y zonas francas',
+    summary: 'Atención en complejos industriales y comerciales donde la seguridad logística es un factor crítico.',
+    icon: Container
+  }
+];
+
+export type CoverageZone = {
+  title: string;
+  summary: string;
+  icon: LucideIcon;
+};
+
+export const coverageZones: CoverageZone[] = [
+  {
+    title: 'Zona Libre de Colón',
+    summary: 'Cobertura en uno de los principales centros de movimiento comercial y de mercancía del país.',
+    icon: Building2
   },
   {
-    title: 'Transporte terrestre',
-    summary: 'Inspección de camiones, remolques y rutas operativas vinculadas al traslado de carga.',
-    icon: Container
+    title: 'Agencia Panamá Pacífico',
+    summary: 'Apoyo para empresas instaladas en esta zona estratégica para operaciones logísticas y corporativas.',
+    icon: CheckCircle2
+  },
+  {
+    title: 'Aeropuerto de Cargas en Tocumen',
+    summary: 'Custodia, inspección y seguridad para operaciones vinculadas a carga aérea y movimientos aeroportuarios.',
+    icon: Plane
+  },
+  {
+    title: 'Puertos y terminales',
+    summary: 'Servicios para contenedores, camiones, patios y operaciones asociadas a carga marítima.',
+    icon: Ship
+  },
+  {
+    title: 'Parques industriales',
+    summary: 'Atención para parques logísticos, centros industriales y complejos donde se almacena o moviliza mercancía.',
+    icon: Warehouse
+  },
+  {
+    title: 'Cobertura nacional',
+    summary: 'La oferta de servicio se comunica para atención a nivel nacional en los principales puntos de operación del cliente.',
+    icon: MapPin
   }
 ];
 
 export const processSteps = [
   {
     title: 'Evaluación operativa',
-    text: 'Se identifica el tipo de carga, punto de revisión, nivel de riesgo y objetivo del servicio.',
+    text: 'Se identifica el tipo de carga, el punto de revisión, la ruta o instalación y el objetivo del servicio.',
     icon: Radar
   },
   {
     title: 'Despliegue especializado',
-    text: 'El equipo se ubica en bodega, puerto, patio, camión o zona de carga según la operación.',
+    text: 'El equipo se ubica en bodega, puerto, patio, contenedor, camión, furgón o zona de carga según la operación.',
     icon: Siren
   },
   {
-    title: 'Inspección y vigilancia',
-    text: 'Se ejecuta la revisión K9, vigilancia preventiva o verificación requerida por la empresa.',
+    title: 'Inspección, vigilancia o custodia',
+    text: 'Se ejecuta la revisión K9, la vigilancia preventiva o la custodia de mercancía y transportes requerida por el cliente.',
     icon: Dog
   },
   {
     title: 'Cierre documentado',
-    text: 'La operación puede acompañarse con evidencias, observaciones y control de incidencias.',
+    text: 'La operación puede acompañarse con evidencias, observaciones y control de incidencias según el servicio contratado.',
     icon: FileCheck2
   }
 ];
 
 export const gallery = [
-  { src: '/images/k9/inspeccion-camion-rojo.webp', title: 'Inspección de camión', caption: 'Revisión K9 en unidad de carga terrestre.' },
-  { src: '/images/k9/inspeccion-trailer.webp', title: 'Control en trailer', caption: 'Unidad canina dentro de área de carga.' },
-  { src: '/images/k9/inspeccion-bodega.webp', title: 'Bodega y mercancía', caption: 'Inspección en almacenes y áreas de inventario.' },
-  { src: '/images/k9/inspeccion-puerto.webp', title: 'Carga terrestre', caption: 'Apoyo preventivo en rutas y zonas de tránsito.' },
-  { src: '/images/k9/inspeccion-ruedas.webp', title: 'Revisión de unidad', caption: 'Verificación en vehículos de carga.' },
-  { src: '/images/k9/inspeccion-mercancia.webp', title: 'Mercancía paletizada', caption: 'Inspección de cajas y carga en bodega.' },
-  { src: '/images/k9/control-neumaticos.webp', title: 'Control físico', caption: 'Revisión complementaria en transporte pesado.' },
-  { src: '/images/k9/basc-entrega.webp', title: 'Respaldo institucional', caption: 'Entrega de certificación y compromiso con estándares de seguridad.' }
+  { src: '/images/k9/custodia-operador.webp', title: 'Custodia operativa', caption: 'Operador y unidad canina en punto de carga.' },
+  { src: '/images/k9/ruta-transportes.webp', title: 'Transporte en ruta', caption: 'Custodia y seguimiento para camiones y mercancía en tránsito.' },
+  { src: '/images/k9/custodia-mercancia.webp', title: 'Mercancía bajo control', caption: 'Custodia de mercancía y transportes en área operativa.' },
+  { src: '/images/k9/inspeccion-bodega-negra.webp', title: 'Inspección en bodega', caption: 'Unidad K9 en proceso de revisión dentro de almacenes.' },
+  { src: '/images/k9/inspeccion-pallets.webp', title: 'Verificación en pallets', caption: 'Inspección de mercancía almacenada en bodega.' },
+  { src: '/images/k9/inspeccion-contenedor-cafe.webp', title: 'Control en contenedor', caption: 'Revisión preventiva dentro de contenedores con mercancía.' },
+  { src: '/images/k9/inspeccion-camion-rojo.webp', title: 'Revisión de unidad', caption: 'Verificación preventiva en camiones y áreas de acceso.' },
+  { src: '/images/k9/basc-entrega.webp', title: 'Respaldo institucional', caption: 'Compromiso con procesos de seguridad y respaldo documental.' }
 ];
 
 export const faqs = [
   {
-    question: '¿Atienden empresas dentro de la Zona Libre de Colón?',
+    question: '¿Atienden únicamente dentro de la Zona Libre de Colón?',
     answer:
-      'Sí. La operación está enfocada en Colón y en empresas que manejan carga, bodegas, mercancía de importación/exportación y procesos logísticos.'
+      'No. La empresa se comunica con cobertura en Colón y a nivel nacional, incluyendo las principales zonas francas, puertos, parques industriales, Panamá Pacífico y el aeropuerto de cargas en Tocumen.'
   },
   {
-    question: '¿El servicio K9 aplica solo para camiones?',
+    question: '¿Qué tipo de instalaciones y unidades pueden inspeccionar?',
     answer:
-      'No. Puede aplicarse a camiones, contenedores, bodegas, mercancía paletizada, áreas de carga y puntos operativos donde se necesite una revisión preventiva.'
+      'La operación puede aplicarse en bodegas, contenedores, camiones, furgones, patios, mercancía paletizada y otras áreas donde se requiera inspección o control preventivo.'
   },
   {
-    question: '¿También trabajan con puertos y carga marítima?',
+    question: '¿Pueden custodiar mercancía y transportes?',
     answer:
-      'Sí. La propuesta de servicio contempla apoyo para operaciones aéreas, terrestres y marítimas, incluyendo puertos, bodegas y transporte de carga.'
+      'Sí. Se ofrecen servicios de custodia para mercancía, contenedores, camiones y furgones, incluyendo acompañamiento hacia puertos, aeropuertos y trayectos de bodega a bodega.'
   },
   {
-    question: '¿Pueden verificar mercancía dañada o procesos de eliminación?',
+    question: '¿También trabajan con puertos, zonas francas y parques industriales?',
     answer:
-      'Sí. La empresa puede apoyar en la verificación de mercancía dañada y en procesos donde se requiere constatar descarte o eliminación supervisada.'
+      'Sí. La propuesta contempla atención para puertos, zonas francas, parques industriales, bodegas y operaciones de carga aérea, terrestre y marítima.'
   },
   {
-    question: '¿Qué significa el respaldo BASC en esta web?',
+    question: '¿Qué respaldo institucional se muestra en la web?',
     answer:
-      'El respaldo BASC se muestra con los datos del documento recibido, incluyendo fecha de expedición, vencimiento y número de certificación, para mantener una comunicación clara y verificable.'
+      'La web comunica que la empresa es una agencia de seguridad registrada en la DIASP y además muestra el documento BASC recibido con su número de certificación, fecha de expedición y fecha de vencimiento para mantener transparencia documental.'
   }
 ];
 
 export const trustSignals = [
-  { label: 'Colón', value: 'Presencia operativa' },
-  { label: 'Zona Libre', value: 'Entorno logístico' },
+  { label: 'DIASP', value: 'Agencia registrada' },
+  { label: 'Panamá', value: 'Cobertura nacional' },
   { label: 'K9', value: 'Inspección canina' },
-  { label: 'BASC', value: 'Estándares de seguridad' }
+  { label: 'BASC', value: 'Respaldo documental' }
 ];
 
 export const certifications = [
@@ -273,12 +342,12 @@ export const certifications = [
   },
   {
     title: 'Seguridad de la cadena logística',
-    text: 'Enfoque alineado a controles para servicios de seguridad, vigilancia privada e inspección canina.',
+    text: 'Enfoque alineado a controles para servicios de seguridad, vigilancia privada e inspección canina dentro de operaciones logísticas.',
     icon: ShieldCheck
   },
   {
     title: 'Cobertura operativa',
-    text: 'Cobertura para cargas, bodegas, puertos, camiones y procesos donde se requiere control preventivo y evidencia operativa.',
+    text: 'Cobertura para cargas, bodegas, puertos, camiones, furgones y procesos donde se requiere control preventivo y evidencia operativa.',
     icon: CheckCircle2
   }
 ];

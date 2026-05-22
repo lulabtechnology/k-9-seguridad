@@ -3,12 +3,12 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
 import { SectionIntro } from '@/components/SectionIntro';
-import { sectors, services } from '@/lib/site';
+import { coverageZones, sectors, services } from '@/lib/site';
 
 export const metadata: Metadata = {
-  title: 'Sectores atendidos: logística, bodegas, puertos y Zona Libre',
+  title: 'Sectores atendidos y cobertura nacional',
   description:
-    'K9 Security International atiende empresas logísticas, bodegas, puertos, transporte terrestre, carga aérea y operaciones dentro de la Zona Libre de Colón.'
+    'K9 Security International atiende empresas logísticas, bodegas, puertos, transporte terrestre, carga aérea, zonas francas y parques industriales en Colón y Panamá.'
 };
 
 export default function SectoresPage() {
@@ -21,8 +21,8 @@ export default function SectoresPage() {
         <div className="page-hero__overlay" />
         <div className="container page-hero__content">
           <span className="eyebrow">Sectores atendidos</span>
-          <h1>Seguridad para empresas que mueven mercancía de importación y exportación.</h1>
-          <p>Atención para entornos de logística, bodegas, puertos, transporte y operaciones comerciales dentro de Colón y Zona Libre.</p>
+          <h1>Seguridad para empresas que mueven mercancía de importación, exportación y distribución.</h1>
+          <p>Atención para entornos de logística, bodegas, puertos, transporte, zonas francas, parques industriales y operaciones comerciales en Colón y Panamá.</p>
         </div>
       </section>
 
@@ -42,6 +42,29 @@ export default function SectoresPage() {
                   <Icon size={32} />
                   <h3>{sector.title}</h3>
                   <p>{sector.summary}</p>
+                </article>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      <section className="section section--light">
+        <div className="container">
+          <SectionIntro
+            eyebrow="Cobertura nacional"
+            title="Principales puntos del país donde puede coordinar su operación."
+            text="La oferta de servicio se comunica sin limitarse únicamente a la Zona Libre de Colón."
+            align="center"
+          />
+          <div className="sector-grid sector-grid--wide">
+            {coverageZones.map((zone) => {
+              const Icon = zone.icon;
+              return (
+                <article className="sector-card" key={zone.title}>
+                  <Icon size={32} />
+                  <h3>{zone.title}</h3>
+                  <p>{zone.summary}</p>
                 </article>
               );
             })}

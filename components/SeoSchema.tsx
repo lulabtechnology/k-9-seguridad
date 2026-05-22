@@ -1,6 +1,15 @@
 import { services, site } from '@/lib/site';
 
 export function SeoSchema() {
+  const areas = [
+    'Panamá',
+    'Colón',
+    'Zona Libre de Colón',
+    'Panamá Pacífico',
+    'Aeropuerto de Cargas en Tocumen',
+    'Parques industriales'
+  ];
+
   const schema = {
     '@context': 'https://schema.org',
     '@graph': [
@@ -19,13 +28,14 @@ export function SeoSchema() {
           addressLocality: 'Colón',
           addressCountry: 'PA'
         },
-        areaServed: ['Colón', 'Zona Libre de Colón', 'Panamá'],
+        areaServed: areas,
         knowsAbout: [
           'Seguridad logística',
           'Inspección K9 de cargas',
-          'Vigilancia en bodegas',
+          'Vigilancia 24 horas',
+          'Custodia de mercancía y transportes',
           'Inspección de contenedores',
-          'Seguridad para puertos'
+          'Seguridad para puertos y aeropuertos'
         ]
       },
       ...services.map((service) => ({
@@ -33,7 +43,7 @@ export function SeoSchema() {
         name: service.title,
         description: service.summary,
         provider: { '@id': `${site.domain}/#organization` },
-        areaServed: ['Panamá', 'Colón', 'Zona Libre de Colón'],
+        areaServed: areas,
         url: `${site.domain}/servicios/${service.slug}`
       }))
     ]

@@ -68,7 +68,7 @@ export default async function ServiceDetailPage({ params }: PageProps) {
               <li><ShieldCheck size={18} /> Refuerza controles internos de seguridad.</li>
               <li><ShieldCheck size={18} /> Apoya operaciones logísticas con movimiento de carga.</li>
               <li><ShieldCheck size={18} /> Aporta evidencia operativa para clientes, aliados y responsables de seguridad.</li>
-              <li><ShieldCheck size={18} /> Se enfoca en operaciones dentro de Panamá, Colón y Zona Libre.</li>
+              <li><ShieldCheck size={18} /> Puede coordinarse en Colón y a nivel nacional, incluyendo zonas francas, puertos, aeropuertos y parques industriales.</li>
             </ul>
           </div>
           <ContactForm />

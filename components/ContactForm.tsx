@@ -60,11 +60,13 @@ export function ContactForm() {
         Servicio requerido
         <select name="service" defaultValue="Inspección K9 de cargas">
           <option>Inspección K9 de cargas</option>
-          <option>Vigilancia en bodegas</option>
-          <option>Inspección de contenedores y camiones</option>
+          <option>Vigilancia y seguridad 24 horas</option>
+          <option>Inspección de contenedores, furgones y camiones</option>
           <option>Seguridad logística integral</option>
           <option>Verificación de mercancía dañada</option>
-          <option>Servicios K9 para puertos y bodegas</option>
+          <option>Inspección de bodegas, puertos y parques industriales</option>
+          <option>Custodia de mercancía y transportes</option>
+          <option>Custodia de bodega a bodega</option>
         </select>
       </label>
       <label>

@@ -5,7 +5,7 @@ import { ContactForm } from '@/components/ContactForm';
 import { Hero } from '@/components/Hero';
 import { SectionIntro } from '@/components/SectionIntro';
 import { ServiceCard } from '@/components/ServiceCard';
-import { certifications, faqs, gallery, processSteps, sectors, services, site } from '@/lib/site';
+import { certifications, coverageZones, faqs, gallery, processSteps, sectors, services, site } from '@/lib/site';
 
 export default function HomePage() {
   return (
@@ -16,13 +16,13 @@ export default function HomePage() {
         <div className="container split-grid split-grid--center">
           <SectionIntro
             eyebrow="Empresa de seguridad logística"
-            title="Especialistas en vigilancia e inspección de cargas para operaciones de alto movimiento."
-            text="K9 Security International, S.A. atiende empresas que manejan mercancía en Colón, Zona Libre, bodegas, puertos y rutas de carga, con servicios enfocados en prevención, control operativo y verificación profesional."
+            title="Especialistas en vigilancia, custodia e inspección de cargas para operaciones de alto movimiento."
+            text="K9 Security International, S.A. se presenta como una agencia de seguridad registrada en la DIASP, con servicios para bodegas, puertos, aeropuertos, rutas de carga, zonas francas y empresas que necesitan prevención, control operativo y verificación profesional."
           />
           <div className="feature-panel">
-            <span className="feature-panel__label">Diferencial declarado</span>
-            <h3>Vigilancia e inspección de cargas aéreas, terrestres y marítimas.</h3>
-            <p>La operación se presenta como una solución integral para empresas logísticas que necesitan reforzar seguridad en diferentes puntos de su cadena de carga.</p>
+            <span className="feature-panel__label">Cobertura comercial</span>
+            <h3>Servicio a nivel nacional en puntos clave de la cadena logística.</h3>
+            <p>La oferta de servicio no se limita a la Zona Libre de Colón. También puede atender operaciones en Panamá Pacífico, aeropuerto de cargas en Tocumen, parques industriales, puertos y otros puntos estratégicos del país.</p>
             <Link href="/empresa" className="text-link">Conocer la empresa <ArrowRight size={16} /></Link>
           </div>
         </div>
@@ -32,12 +32,12 @@ export default function HomePage() {
         <div className="container">
           <SectionIntro
             eyebrow="Servicios principales"
-            title="Control preventivo para bodegas, puertos, camiones y mercancía."
-            text="Soluciones enfocadas en vigilancia, inspección canina, control de contenedores y verificación de mercancía para operaciones que requieren prevención real."
+            title="Control preventivo para mercancía, transportes, bodegas y operaciones logísticas."
+            text="Soluciones enfocadas en seguridad 24 horas, inspección canina, custodia de contenedores, vigilancia en bodegas y verificación de mercancía para operaciones que requieren prevención real."
             align="center"
           />
           <div className="cards-grid cards-grid--services">
-            {services.slice(0, 6).map((service) => (
+            {services.map((service) => (
               <ServiceCard key={service.slug} service={service} />
             ))}
           </div>
@@ -49,7 +49,7 @@ export default function HomePage() {
           <div>
             <span className="eyebrow eyebrow--gold">Método de operación</span>
             <h2>Un proceso claro para intervenir sin desordenar la operación del cliente.</h2>
-            <p>Cada servicio se coordina según el punto de revisión, el tipo de carga y el nivel de control que requiere la empresa.</p>
+            <p>Cada servicio se coordina según el punto de revisión, el tipo de carga, la ruta, el horario y el nivel de control que requiere la empresa.</p>
           </div>
           <div className="process-list">
             {processSteps.map((step, index) => {
@@ -71,7 +71,7 @@ export default function HomePage() {
         <div className="container">
           <SectionIntro
             eyebrow="Sectores atendidos"
-            title="Atención para empresas de logística, bodegas y comercio internacional."
+            title="Atención para empresas de logística, comercio internacional y movimiento de mercancía."
             text="La operación atiende entornos donde la mercancía debe moverse con control, trazabilidad y presencia preventiva."
             align="center"
           />
@@ -83,6 +83,29 @@ export default function HomePage() {
                   <Icon size={30} />
                   <h3>{sector.title}</h3>
                   <p>{sector.summary}</p>
+                </article>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="container">
+          <SectionIntro
+            eyebrow="Cobertura nacional"
+            title="Principales zonas francas y puntos estratégicos donde puede coordinar su servicio."
+            text="La web ahora deja claro que la oferta puede atender operaciones dentro y fuera de Colón, según la necesidad operativa del cliente."
+            align="center"
+          />
+          <div className="sector-grid sector-grid--wide">
+            {coverageZones.map((zone) => {
+              const Icon = zone.icon;
+              return (
+                <article className="sector-card" key={zone.title}>
+                  <Icon size={30} />
+                  <h3>{zone.title}</h3>
+                  <p>{zone.summary}</p>
                 </article>
               );
             })}
@@ -123,8 +146,8 @@ export default function HomePage() {
         <div className="container">
           <SectionIntro
             eyebrow="Galería operativa"
-            title="Imágenes reales de inspección, vigilancia y control de carga."
-            text="Las fotos se usan de forma estratégica para mostrar capacidad operativa sin saturar la experiencia del sitio."
+            title="Imágenes reales de inspección, vigilancia, custodia y control de carga."
+            text="Se incorporan fotografías reales para reforzar la credibilidad visual del servicio sin saturar la experiencia del sitio."
             align="center"
           />
           <div className="gallery-grid">
@@ -144,9 +167,9 @@ export default function HomePage() {
       <section className="section section--navy cta-section">
         <div className="container cta-grid">
           <div>
-            <span className="eyebrow eyebrow--gold"><MapPin size={18} /> Colón · Zona Libre · Panamá</span>
+            <span className="eyebrow eyebrow--gold"><MapPin size={18} /> Colón · Panamá Pacífico · Tocumen · Panamá</span>
             <h2>Coordine seguridad para su operación logística antes de que exista un riesgo.</h2>
-            <p>Solicite vigilancia, inspección K9 o verificación de mercancía para bodegas, carga, puertos y transporte.</p>
+            <p>Solicite vigilancia, custodia o inspección K9 para bodegas, carga, puertos, aeropuertos, transporte y zonas francas.</p>
           </div>
           <ContactForm />
         </div>

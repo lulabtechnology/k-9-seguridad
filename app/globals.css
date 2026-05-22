@@ -87,11 +87,13 @@ textarea {
 .eyebrow {
   display: inline-flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 8px;
   color: var(--blue);
   font-weight: 800;
   font-size: 0.82rem;
   letter-spacing: .1em;
+  line-height: 1.35;
   text-transform: uppercase;
   margin-bottom: 16px;
 }
@@ -344,6 +346,7 @@ p {
   display: flex;
   flex-direction: column;
   gap: 28px;
+  overflow-y: auto;
 }
 
 .mobile-menu--open {
@@ -1632,23 +1635,30 @@ p {
   }
 
   .site-logo__wordmark strong {
-    font-size: .92rem;
+    font-size: .86rem;
   }
 
   .site-logo__wordmark small {
-    font-size: .62rem;
-    max-width: 118px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    display: none;
   }
 
   .header__inner {
+    gap: 10px;
     padding: 7px 8px;
   }
 
+  .mobile-menu {
+    width: min(420px, 100vw);
+    padding-bottom: 110px;
+  }
+
+  .eyebrow {
+    font-size: .74rem;
+    letter-spacing: .08em;
+  }
+
   .hero {
-    padding: 138px 0 26px;
+    padding: 152px 0 26px;
   }
 
   .hero__overlay,
@@ -1724,7 +1734,7 @@ p {
 
   .page-hero {
     min-height: 560px;
-    padding-top: 145px;
+    padding-top: 158px;
   }
 
   .service-detail-hero {

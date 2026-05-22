@@ -5,9 +5,9 @@ import { ServiceCard } from '@/components/ServiceCard';
 import { services } from '@/lib/site';
 
 export const metadata: Metadata = {
-  title: 'Servicios de vigilancia e inspección K9',
+  title: 'Servicios de vigilancia, custodia e inspección K9',
   description:
-    'Servicios de vigilancia en bodegas, inspección K9 de cargas, inspección de contenedores, seguridad logística y verificación de mercancía dañada en Colón y Panamá.'
+    'Servicios de vigilancia 24 horas, custodia de mercancía, inspección K9 de cargas, inspección de contenedores y seguridad logística en Colón y Panamá.'
 };
 
 export default function ServiciosPage() {
@@ -20,8 +20,8 @@ export default function ServiciosPage() {
         <div className="page-hero__overlay" />
         <div className="container page-hero__content">
           <span className="eyebrow">Servicios</span>
-          <h1>Vigilancia, inspección K9 y control de mercancía para empresas logísticas.</h1>
-          <p>Servicios para empresas que necesitan vigilancia en bodegas, inspección de contenedores, revisión K9 y control preventivo de mercancía.</p>
+          <h1>Vigilancia, custodia e inspección K9 para empresas logísticas y comerciales.</h1>
+          <p>Servicios para empresas que necesitan vigilancia 24 horas, inspección de bodegas, custodia de contenedores, camiones y furgones, revisión K9 y control preventivo de mercancía.</p>
         </div>
       </section>
 
@@ -30,7 +30,7 @@ export default function ServiciosPage() {
           <SectionIntro
             eyebrow="Soluciones especializadas"
             title="Servicios especializados para operaciones logísticas sensibles."
-            text="Cada solución se presenta con su aplicación operativa para que el cliente identifique rápidamente el apoyo que necesita."
+            text="Cada solución se presenta con su aplicación operativa para que el cliente identifique rápidamente el apoyo que necesita en Colón o a nivel nacional."
             align="center"
           />
           <div className="cards-grid cards-grid--services">

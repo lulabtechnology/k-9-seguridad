@@ -10,15 +10,17 @@ import { site } from '@/lib/site';
 export const metadata: Metadata = {
   metadataBase: new URL(site.domain),
   title: {
-    default: 'K9 Security International | Seguridad e inspección K9 en Colón',
+    default: 'K9 Security International | Seguridad, custodia e inspección K9 en Panamá',
     template: '%s | K9 Security International'
   },
   description: site.description,
   keywords: [
-    'seguridad privada Colón',
+    'seguridad privada Panamá',
+    'agencia de seguridad DIASP',
     'inspección K9 Panamá',
     'inspección canina de cargas',
-    'vigilancia bodegas Zona Libre de Colón',
+    'vigilancia 24 horas bodegas',
+    'custodia de mercancía',
     'seguridad logística Panamá',
     'inspección contenedores Colón'
   ],

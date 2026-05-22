@@ -6,9 +6,9 @@ import { SectionIntro } from '@/components/SectionIntro';
 import { processSteps, site, whatsappHref } from '@/lib/site';
 
 export const metadata: Metadata = {
-  title: 'Empresa de seguridad logística en Colón',
+  title: 'Empresa de seguridad logística en Colón y Panamá',
   description:
-    'Conozca K9 Security International, S.A., empresa de vigilancia e inspección K9 para cargas, bodegas, puertos y operaciones logísticas en Colón.'
+    'Conozca K9 Security International, S.A., agencia de seguridad registrada en la DIASP con servicios de vigilancia, custodia e inspección K9 para cargas, bodegas, puertos y operaciones logísticas en Panamá.'
 };
 
 export default function EmpresaPage() {
@@ -22,7 +22,7 @@ export default function EmpresaPage() {
         <div className="container page-hero__content">
           <span className="eyebrow"><ShieldCheck size={18} /> Empresa</span>
           <h1>Seguridad especializada para comercio, logística y operaciones de carga.</h1>
-          <p>K9 Security International, S.A. presta servicios de vigilancia, inspección K9 y verificación operativa para empresas que manejan mercancía en Colón, Zona Libre, puertos y bodegas.</p>
+          <p>K9 Security International, S.A. se presenta como una agencia de seguridad registrada en la DIASP, con servicios de vigilancia, custodia e inspección K9 para empresas que manejan mercancía en Colón y a nivel nacional.</p>
         </div>
       </section>
 
@@ -30,8 +30,8 @@ export default function EmpresaPage() {
         <div className="container split-grid split-grid--center">
           <SectionIntro
             eyebrow="Presencia estratégica"
-            title="Colón es el punto natural para atender carga de importación y exportación."
-            text="La empresa se ubica en un entorno comercial donde la seguridad logística, el control de mercancía y la prevención son parte esencial de la operación diaria."
+            title="Base operativa en Colón con alcance para puntos logísticos clave del país."
+            text="La empresa se ubica en un entorno comercial estratégico y comunica atención para operaciones en zonas francas, puertos, aeropuertos, parques industriales y rutas de carga donde la prevención es parte esencial de la operación diaria."
           />
           <div className="info-card info-card--strong">
             <MapPin size={34} />
@@ -56,8 +56,8 @@ export default function EmpresaPage() {
           </article>
           <article>
             <ShieldCheck size={32} />
-            <h2>Especialización logística</h2>
-            <p>El contenido está dirigido a empresas que manejan carga, bodegas, puertos, importación, exportación y transporte terrestre.</p>
+            <h2>Registro y especialización</h2>
+            <p>La web comunica que la empresa es una agencia de seguridad registrada en la DIASP y especializada en operaciones logísticas, custodia, vigilancia 24 horas e inspección K9.</p>
           </article>
         </div>
       </section>
@@ -87,8 +87,11 @@ export default function EmpresaPage() {
       <section className="section">
         <div className="container final-cta">
           <h2>Refuerce su operación logística con seguridad especializada.</h2>
-          <p>La empresa puede apoyar operaciones donde la prevención, el control de accesos, la inspección de carga y la evidencia operativa son factores críticos.</p>
-          <Link className="btn btn--primary" href={whatsappHref('Hola, deseo información sobre K9 Security International y sus servicios para empresas logísticas.')}>
+          <p>La empresa puede apoyar operaciones donde la prevención, el control de accesos, la inspección de carga, la custodia de mercancía y la evidencia operativa son factores críticos.</p>
+          <Link
+            className="btn btn--primary"
+            href={whatsappHref('Hola, deseo información sobre K9 Security International y sus servicios para empresas logísticas.')}
+          >
             Solicitar información
           </Link>
         </div>

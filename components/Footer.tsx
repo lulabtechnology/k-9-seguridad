@@ -28,7 +28,7 @@ export function Footer() {
         <div>
           <h3>Servicios especializados</h3>
           <ul>
-            {services.slice(0, 5).map((service) => (
+            {services.slice(0, 6).map((service) => (
               <li key={service.slug}>
                 <Link href={`/servicios/${service.slug}`}>{service.title}</Link>
               </li>
@@ -38,7 +38,7 @@ export function Footer() {
         <div className="footer__cta">
           <ShieldCheck size={34} />
           <h3>Operaciones que requieren control real</h3>
-          <p>Coordine vigilancia, inspección K9 o verificación de mercancía para su operación logística.</p>
+          <p>Coordine vigilancia, custodia, inspección K9 o verificación de mercancía para su operación logística en Colón o a nivel nacional.</p>
           <Link className="btn btn--primary" href={whatsappHref('Hola, deseo cotizar servicios de vigilancia e inspección K9 para una operación logística.')}>
             Solicitar atención
           </Link>
