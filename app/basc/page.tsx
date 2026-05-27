@@ -1,14 +1,14 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
-import { AlertTriangle, Award, Download, FileCheck2 } from 'lucide-react';
+import { Award, Download, FileCheck2 } from 'lucide-react';
 import { SectionIntro } from '@/components/SectionIntro';
 import { certifications, site } from '@/lib/site';
 
 export const metadata: Metadata = {
   title: 'Certificación BASC y respaldo documental',
   description:
-    'Respaldo BASC de K9 Security International, con certificado, número documental, fecha de expedición y datos de vencimiento visibles.'
+    'Respaldo BASC de K9 Security International, con certificado actualizado, número documental, fecha de expedición y norma aplicable.'
 };
 
 export default function BascPage() {
@@ -35,17 +35,12 @@ export default function BascPage() {
             <SectionIntro
               eyebrow="Documento compartido"
               title="Certificación BASC asociada a K9 Security International, S.A."
-              text="El documento se presenta con número de certificación, fecha de expedición, vencimiento y norma indicada, manteniendo la información visible de forma clara."
+              text="El certificado actualizado se presenta con número de certificación, fecha de expedición y norma indicada, manteniendo la información institucional visible de forma clara."
             />
             <div className="doc-facts">
               <div><strong>Certificación No.</strong><span>{site.basc.certificateNumber}</span></div>
               <div><strong>Expedición</strong><span>{site.basc.issued}</span></div>
-              <div><strong>Vencimiento del documento recibido</strong><span>{site.basc.expires}</span></div>
               <div><strong>Norma</strong><span>{site.basc.standard}</span></div>
-            </div>
-            <div className="warning-box">
-              <AlertTriangle size={22} />
-              <p>El certificado recibido indica vencimiento 2025-11-22. La sección mantiene el dato visible para que la información documental sea transparente.</p>
             </div>
             <Link href={site.basc.pdf} className="btn btn--primary" target="_blank" rel="noopener noreferrer">
               Descargar certificado <Download size={18} />

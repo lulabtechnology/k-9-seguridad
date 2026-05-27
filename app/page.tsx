@@ -122,7 +122,7 @@ export default function HomePage() {
             <span className="eyebrow"><Award size={18} /> Respaldo BASC</span>
             <h2>Control documentado bajo estándares internacionales de seguridad.</h2>
             <p>
-              El certificado compartido por la empresa hace referencia a la Norma y Estándares Internacionales BASC, versión 6-2022, para servicios de custodia de seguridad, vigilancia privada e inspección canina en Colón y Panamá.
+              El certificado actualizado compartido por la empresa hace referencia a la Norma y Estándares Internacionales BASC, versión 6-2022, para servicios de custodia de seguridad, vigilancia privada e inspección canina en Colón y Panamá.
             </p>
             <div className="cert-grid">
               {certifications.map((item) => {
@@ -136,7 +136,7 @@ export default function HomePage() {
                 );
               })}
             </div>
-            <p className="note"><strong>Información documental:</strong> el certificado recibido indica expedición 2024-11-22 y vencimiento 2025-11-22. Esta sección mantiene los datos visibles con transparencia.</p>
+            <p className="note"><strong>Información documental:</strong> certificación No. PANPTY00074-1-2, expedida el 2025-11-22 bajo la Norma BASC International Norm and Standards, versión 6-2022.</p>
             <Link className="btn btn--secondary" href="/basc">Ver sección BASC</Link>
           </div>
         </div>

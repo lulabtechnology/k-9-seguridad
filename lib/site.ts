@@ -33,9 +33,8 @@ export const site = {
   whatsapp: process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '',
   email: process.env.NEXT_PUBLIC_CONTACT_EMAIL || '',
   basc: {
-    certificateNumber: 'PANPTY00074-1-1',
-    issued: '2024-11-22',
-    expires: '2025-11-22',
+    certificateNumber: 'PANPTY00074-1-2',
+    issued: '2025-11-22',
     standard: 'BASC International Norm and Standards, versión 6-2022',
     pdf: '/docs/certificado-basc-k9-security-international.pdf',
     image: '/images/k9/basc-certificado.webp'
@@ -323,7 +322,7 @@ export const faqs = [
   {
     question: '¿Qué respaldo institucional se muestra en la web?',
     answer:
-      'La web comunica que la empresa es una agencia de seguridad registrada en la DIASP y además muestra el documento BASC recibido con su número de certificación, fecha de expedición y fecha de vencimiento para mantener transparencia documental.'
+      'La web comunica que la empresa es una agencia de seguridad registrada en la DIASP y además muestra el certificado BASC actualizado con su número de certificación, fecha de expedición y norma aplicable.'
   }
 ];
 

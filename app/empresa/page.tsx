@@ -52,7 +52,7 @@ export default function EmpresaPage() {
           <article>
             <Award size={32} />
             <h2>Respaldo documental</h2>
-            <p>La empresa cuenta con respaldo documental BASC asociado a procesos de seguridad, vigilancia privada e inspección canina, con datos de expedición y vencimiento visibles para consulta.</p>
+            <p>La empresa cuenta con certificado BASC actualizado asociado a procesos de seguridad, vigilancia privada e inspección canina, con número documental y norma aplicable visibles para consulta.</p>
           </article>
           <article>
             <ShieldCheck size={32} />
