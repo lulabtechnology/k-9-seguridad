@@ -47,7 +47,7 @@ export async function POST(request: Request) {
   if (mailTo) {
     const subject = encodeURIComponent(`Solicitud web - ${payload.service || 'Servicio K9'}`);
     const text = encodeURIComponent(
-      `Nombre: ${payload.name}\nEmpresa: ${payload.company}\nTeléfono: ${payload.phone}\nCorreo: ${payload.email || 'No indicado'}\nServicio: ${payload.service}\n\nDetalle:\n${payload.details}`
+      `Nombre: ${payload.name}\nEmpresa: ${payload.company}\nTeléfono: ${payload.phone}\nCorreo: ${payload.email || 'No indicado'}\nServicio: ${payload.service || 'No indicado'}\n\nDetalle:\n${payload.details}`
     );
 
     return NextResponse.json({
@@ -56,7 +56,13 @@ export async function POST(request: Request) {
     });
   }
 
+  const whatsappNumber = '50766177034';
+  const whatsappText = encodeURIComponent(
+    `Hola, deseo solicitar un servicio de K9 Security.\n\nNombre: ${payload.name}\nEmpresa: ${payload.company}\nTeléfono: ${payload.phone}\nCorreo: ${payload.email || 'No indicado'}\nServicio: ${payload.service || 'No indicado'}\n\nDetalle:\n${payload.details}`
+  );
+
   return NextResponse.json({
-    message: 'El formulario necesita un correo o WhatsApp confirmado de K9 Security para recibir solicitudes.'
-  }, { status: 503 });
+    message: 'Solicitud preparada. Se abrirá WhatsApp para enviar los datos al equipo de atención.',
+    whatsapp: `https://wa.me/${whatsappNumber}?text=${whatsappText}`
+  });
 }

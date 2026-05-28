@@ -43,10 +43,10 @@ Valores disponibles:
 
 ## Contacto
 
-No se inventó teléfono, WhatsApp ni correo. Para activarlos, configurar en Vercel:
+WhatsApp configurado para contacto directo: +507 6617-7034. Si se desea reemplazar en Vercel, configurar:
 
 ```bash
-NEXT_PUBLIC_WHATSAPP_NUMBER=507XXXXXXXX
+NEXT_PUBLIC_WHATSAPP_NUMBER=50766177034
 NEXT_PUBLIC_CONTACT_EMAIL=correo@empresa.com
 ```
 
@@ -55,6 +55,7 @@ Para recibir el formulario automáticamente, usar una de estas variables:
 ```bash
 CONTACT_WEBHOOK_URL=https://...
 CONTACT_EMAIL_TO=correo@empresa.com
+CONTACT_WHATSAPP_NUMBER=50766177034
 ```
 
 Recomendado: usar `CONTACT_WEBHOOK_URL` con Make, Zapier, n8n o endpoint propio.

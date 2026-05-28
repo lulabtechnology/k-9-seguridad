@@ -30,7 +30,7 @@ export const site = {
   description:
     'Agencia de seguridad registrada en la DIASP, especializada en vigilancia 24 horas, custodia de mercancía e inspección K9 de cargas para bodegas, puertos, aeropuertos, contenedores, furgones y camiones en Colón y a nivel nacional.',
   heroVariant: 'operativo' as 'operativo' | 'institucional',
-  whatsapp: process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '',
+  whatsapp: '+507 6617-7034',
   email: process.env.NEXT_PUBLIC_CONTACT_EMAIL || '',
   basc: {
     certificateNumber: 'PANPTY00074-1-2',

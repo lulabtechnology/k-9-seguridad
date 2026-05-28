@@ -5,35 +5,45 @@ import { Send } from 'lucide-react';
 
 type Status = 'idle' | 'sending' | 'sent' | 'error';
 
+const CONTACT_WHATSAPP_NUMBER = '50766177034';
+
+function getField(form: FormData, key: string) {
+  const value = form.get(key);
+  return typeof value === 'string' ? value.trim() : '';
+}
+
 export function ContactForm() {
   const [status, setStatus] = useState<Status>('idle');
   const [message, setMessage] = useState('');
 
-  async function onSubmit(event: FormEvent<HTMLFormElement>) {
+  function onSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
     setStatus('sending');
     setMessage('');
-    const form = new FormData(event.currentTarget);
-    const payload = Object.fromEntries(form.entries());
 
-    try {
-      const response = await fetch('/api/contact', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(payload)
-      });
-      const data = await response.json();
-      if (!response.ok) throw new Error(data?.message || 'No se pudo enviar la solicitud.');
-      if (data?.mailto) {
-        window.location.href = data.mailto;
-      }
-      setStatus('sent');
-      setMessage(data.message || 'Solicitud recibida correctamente.');
-      event.currentTarget.reset();
-    } catch (error) {
+    const formElement = event.currentTarget;
+    const form = new FormData(formElement);
+    const name = getField(form, 'name');
+    const company = getField(form, 'company');
+    const phone = getField(form, 'phone');
+    const email = getField(form, 'email') || 'No indicado';
+    const service = getField(form, 'service') || 'No indicado';
+    const details = getField(form, 'details');
+
+    if (!name || !company || !phone || !details) {
       setStatus('error');
-      setMessage(error instanceof Error ? error.message : 'No se pudo enviar la solicitud.');
+      setMessage('Complete nombre, empresa, teléfono y descripción de la operación.');
+      return;
     }
+
+    const whatsappText = encodeURIComponent(
+      `Hola, deseo solicitar un servicio de K9 Security.\n\nNombre: ${name}\nEmpresa: ${company}\nTeléfono: ${phone}\nCorreo: ${email}\nServicio: ${service}\n\nDetalle:\n${details}`
+    );
+
+    window.location.href = `https://wa.me/${CONTACT_WHATSAPP_NUMBER}?text=${whatsappText}`;
+    setStatus('sent');
+    setMessage('Se abrirá WhatsApp para enviar la solicitud al equipo de atención.');
+    formElement.reset();
   }
 
   return (
@@ -74,7 +84,7 @@ export function ContactForm() {
         <textarea name="details" rows={5} required />
       </label>
       <button className="btn btn--primary" type="submit" disabled={status === 'sending'}>
-        {status === 'sending' ? 'Enviando...' : 'Enviar solicitud'} <Send size={17} />
+        {status === 'sending' ? 'Abriendo WhatsApp...' : 'Enviar por WhatsApp'} <Send size={17} />
       </button>
       {message ? <p className={`form-status form-status--${status}`}>{message}</p> : null}
     </form>
