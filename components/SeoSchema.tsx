@@ -18,9 +18,11 @@ export function SeoSchema() {
         '@id': `${site.domain}/#organization`,
         name: site.name,
         legalName: site.legalName,
+        alternateName: site.aliases,
         url: site.domain,
         logo: `${site.domain}${site.logo}`,
         image: `${site.domain}/images/k9/og-k9-security.jpg`,
+        telephone: site.whatsapp,
         description: site.description,
         address: {
           '@type': 'PostalAddress',
@@ -30,6 +32,10 @@ export function SeoSchema() {
         },
         areaServed: areas,
         knowsAbout: [
+          'K9 Panamá',
+          'K9 Panama Security',
+          'K9 Security Panamá',
+          'Seguridad K9 Panamá',
           'Seguridad logística',
           'Inspección K9 de cargas',
           'Vigilancia 24 horas',
@@ -37,6 +43,15 @@ export function SeoSchema() {
           'Inspección de contenedores',
           'Seguridad para puertos y aeropuertos'
         ]
+      },
+      {
+        '@type': 'WebSite',
+        '@id': `${site.domain}/#website`,
+        url: site.domain,
+        name: 'K9 Panamá | K9 Security International',
+        alternateName: site.aliases,
+        publisher: { '@id': `${site.domain}/#organization` },
+        inLanguage: 'es-PA'
       },
       ...services.map((service) => ({
         '@type': 'Service',

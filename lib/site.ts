@@ -24,13 +24,20 @@ export const site = {
   shortName: 'K9 Security',
   legalName: 'K9 Security International, S.A.',
   logo: '/brand/k9-logo-original.png',
-  domain: process.env.NEXT_PUBLIC_SITE_URL || 'https://k-9-seguridad.vercel.app',
+  domain: process.env.NEXT_PUBLIC_SITE_URL || 'https://k9panamasecurity.com',
   location: 'France Field, Ave. 4, Zona Libre de Colón, Colón, República de Panamá',
   city: 'Colón, Panamá',
   description:
-    'Agencia de seguridad registrada en la DIASP, especializada en vigilancia 24 horas, custodia de mercancía e inspección K9 de cargas para bodegas, puertos, aeropuertos, contenedores, furgones y camiones en Colón y a nivel nacional.',
+    'Empresa de seguridad K9 en Panamá registrada en la DIASP, especializada en vigilancia 24 horas, custodia de mercancía e inspección K9 de cargas para bodegas, puertos, aeropuertos, contenedores, furgones y camiones en Colón y a nivel nacional.',
   heroVariant: 'operativo' as 'operativo' | 'institucional',
   whatsapp: '+507 6617-7034',
+  aliases: [
+    'K9 Panamá',
+    'K9 Panama Security',
+    'K9 Security Panamá',
+    'Seguridad K9 Panamá',
+    'K9 Security International Panamá'
+  ],
   email: process.env.NEXT_PUBLIC_CONTACT_EMAIL || '',
   basc: {
     certificateNumber: 'PANPTY00074-1-2',
@@ -43,6 +50,7 @@ export const site = {
 
 export const navItems = [
   { label: 'Inicio', href: '/' },
+  { label: 'K9 Panamá', href: '/k9-panama' },
   { label: 'Empresa', href: '/empresa' },
   { label: 'Servicios', href: '/servicios' },
   { label: 'Sectores', href: '/sectores' },

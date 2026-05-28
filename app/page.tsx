@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowRight, Award, MapPin, ShieldCheck } from 'lucide-react';
@@ -7,6 +8,22 @@ import { SectionIntro } from '@/components/SectionIntro';
 import { ServiceCard } from '@/components/ServiceCard';
 import { certifications, coverageZones, faqs, gallery, processSteps, sectors, services, site } from '@/lib/site';
 
+
+export const metadata: Metadata = {
+  title: 'K9 Panamá | Seguridad K9, vigilancia y custodia logística',
+  description:
+    'K9 Security International, S.A. ofrece seguridad K9 en Panamá, inspección canina de cargas, vigilancia 24 horas y custodia de mercancía para empresas logísticas, bodegas, puertos y contenedores.',
+  alternates: {
+    canonical: '/'
+  },
+  openGraph: {
+    title: 'K9 Panamá | Seguridad K9 y custodia logística',
+    description:
+      'Empresa de seguridad K9 en Panamá para inspección de cargas, vigilancia de bodegas, custodia de mercancía y operaciones logísticas.',
+    url: '/'
+  }
+};
+
 export default function HomePage() {
   return (
     <>
@@ -15,15 +32,15 @@ export default function HomePage() {
       <section className="section section--light">
         <div className="container split-grid split-grid--center">
           <SectionIntro
-            eyebrow="Empresa de seguridad logística"
-            title="Especialistas en vigilancia, custodia e inspección de cargas para operaciones de alto movimiento."
-            text="K9 Security International, S.A. se presenta como una agencia de seguridad registrada en la DIASP, con servicios para bodegas, puertos, aeropuertos, rutas de carga, zonas francas y empresas que necesitan prevención, control operativo y verificación profesional."
+            eyebrow="Empresa de seguridad K9 en Panamá"
+            title="Especialistas en vigilancia, custodia e inspección K9 de cargas para operaciones de alto movimiento."
+            text="K9 Security International, S.A. se presenta como una empresa de seguridad K9 en Panamá registrada en la DIASP, con servicios para bodegas, puertos, aeropuertos, rutas de carga, zonas francas y empresas que necesitan prevención, control operativo y verificación profesional."
           />
           <div className="feature-panel">
             <span className="feature-panel__label">Cobertura comercial</span>
             <h3>Servicio a nivel nacional en puntos clave de la cadena logística.</h3>
             <p>La oferta de servicio no se limita a la Zona Libre de Colón. También puede atender operaciones en Panamá Pacífico, aeropuerto de cargas en Tocumen, parques industriales, puertos y otros puntos estratégicos del país.</p>
-            <Link href="/empresa" className="text-link">Conocer la empresa <ArrowRight size={16} /></Link>
+            <Link href="/k9-panama" className="text-link">Ver servicios K9 Panamá <ArrowRight size={16} /></Link>
           </div>
         </div>
       </section>

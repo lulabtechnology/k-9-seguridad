@@ -1226,7 +1226,8 @@ p {
   gap: 10px;
 }
 
-.link-list-panel a {
+.link-list-panel a,
+.link-list-panel__item {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1236,6 +1237,18 @@ p {
   background: var(--soft);
   font-weight: 900;
   color: var(--navy);
+}
+
+.link-list-panel__item {
+  justify-content: flex-start;
+  align-items: flex-start;
+  line-height: 1.45;
+}
+
+.link-list-panel__item svg {
+  flex: 0 0 auto;
+  color: var(--gold-2);
+  margin-top: 2px;
 }
 
 .basc-detail-grid {
