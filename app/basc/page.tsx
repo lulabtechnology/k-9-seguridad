@@ -8,7 +8,13 @@ import { certifications, site } from '@/lib/site';
 export const metadata: Metadata = {
   title: 'Certificación BASC y respaldo documental',
   description:
-    'Respaldo BASC de K9 Security International, con certificado actualizado, número documental, fecha de expedición y norma aplicable.'
+    'Respaldo BASC de K9 Security International, con certificado actualizado, número documental, fecha de expedición y norma aplicable.',
+  alternates: {
+    canonical: '/basc'
+  },
+  openGraph: {
+    url: '/basc'
+  }
 };
 
 export default function BascPage() {

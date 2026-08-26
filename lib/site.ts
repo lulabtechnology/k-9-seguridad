@@ -21,7 +21,7 @@ import {
 
 export const site = {
   name: 'K9 Security International, S.A.',
-  shortName: 'K9 Security',
+  shortName: 'K9 Security International',
   legalName: 'K9 Security International, S.A.',
   logo: '/brand/k9-logo-original.png',
   domain: process.env.NEXT_PUBLIC_SITE_URL || 'https://k9panamasecurity.com',
@@ -32,12 +32,12 @@ export const site = {
   heroVariant: 'operativo' as 'operativo' | 'institucional',
   whatsapp: '+507 6617-7034',
   aliases: [
-    'K9 Panamá',
-    'K9 Panama Security',
-    'K9 Security Panamá',
-    'Seguridad K9 Panamá',
-    'K9 Security International Panamá'
+    'K9 Security International',
+    'K9 Security International Panamá',
+    'K9 Security International Panama'
   ],
+  identityDescription:
+    'K9 Security International, S.A. es una empresa independiente con identidad corporativa propia y base operativa en Colón, Panamá. No es una sucursal, filial ni división de otras empresas con nombres similares.',
   email: process.env.NEXT_PUBLIC_CONTACT_EMAIL || '',
   basc: {
     certificateNumber: 'PANPTY00074-1-2',
@@ -98,7 +98,7 @@ export const services: Service[] = [
     icon: Warehouse,
     image: '/images/k9/inspeccion-bodega-negra.webp',
     highlights: ['Servicio de seguridad 24 horas', 'Bodegas, contenedores, furgones y camiones', 'Control de accesos y supervisión operativa'],
-    seoTitle: 'Vigilancia y seguridad 24 horas para bodegas en Panamá | K9 Security',
+    seoTitle: 'Vigilancia y seguridad 24 horas para bodegas en Panamá | K9 Security International',
     seoDescription:
       'Vigilancia y seguridad 24 horas para bodegas, patios, contenedores, furgones y camiones en Colón y a nivel nacional.'
   },
@@ -113,7 +113,7 @@ export const services: Service[] = [
     icon: Container,
     image: '/images/k9/inspeccion-camion-rojo.webp',
     highlights: ['Contenedores y remolques', 'Furgones y camiones', 'Puntos de ingreso, salida y tránsito'],
-    seoTitle: 'Inspección de contenedores, furgones y camiones en Panamá | K9 Security',
+    seoTitle: 'Inspección de contenedores, furgones y camiones en Panamá | K9 Security International',
     seoDescription:
       'Inspección de contenedores, furgones, camiones y vehículos de carga para operaciones logísticas en Colón y Panamá.'
   },
@@ -143,7 +143,7 @@ export const services: Service[] = [
     icon: ClipboardCheck,
     image: '/images/k9/inspeccion-caja.webp',
     highlights: ['Mercancía dañada', 'Descarte y eliminación supervisada', 'Soporte de verificación'],
-    seoTitle: 'Verificación de mercancía dañada en Panamá | K9 Security',
+    seoTitle: 'Verificación de mercancía dañada en Panamá | K9 Security International',
     seoDescription:
       'Verificación de mercancía dañada, descarte supervisado y control operativo para empresas logísticas en Panamá.'
   },
@@ -158,7 +158,7 @@ export const services: Service[] = [
     icon: Anchor,
     image: '/images/k9/inspeccion-pallets.webp',
     highlights: ['Bodegas y almacenes', 'Puertos y patios de carga', 'Parques industriales'],
-    seoTitle: 'Inspección K9 en puertos, bodegas y parques industriales | K9 Security',
+    seoTitle: 'Inspección K9 en puertos, bodegas y parques industriales | K9 Security International',
     seoDescription:
       'Servicios K9 para inspección preventiva en puertos, bodegas, patios de carga y parques industriales en Panamá.'
   },
@@ -173,7 +173,7 @@ export const services: Service[] = [
     icon: Truck,
     image: '/images/k9/custodia-operador.webp',
     highlights: ['Custodia de contenedores, camiones y furgones', 'Traslados hacia puertos y aeropuertos', 'Acompañamiento para distintos tipos de mercancía'],
-    seoTitle: 'Custodia de mercancía y transportes en Panamá | K9 Security',
+    seoTitle: 'Custodia de mercancía y transportes en Panamá | K9 Security International',
     seoDescription:
       'Custodia de mercancía y transportes para contenedores, camiones y furgones hacia puertos, aeropuertos y bodegas en Panamá.'
   },
@@ -188,7 +188,7 @@ export const services: Service[] = [
     icon: Boxes,
     image: '/images/k9/custodia-mercancia.webp',
     highlights: ['Movimiento entre bodegas', 'Control preventivo en traslado', 'Acompañamiento operativo'],
-    seoTitle: 'Custodia de bodega a bodega en Panamá | K9 Security',
+    seoTitle: 'Custodia de bodega a bodega en Panamá | K9 Security International',
     seoDescription:
       'Custodia de bodega a bodega para movimientos de mercancía entre centros logísticos, almacenes y puntos operativos en Panamá.'
   }
@@ -267,7 +267,7 @@ export const coverageZones: CoverageZone[] = [
   },
   {
     title: 'Cobertura nacional',
-    summary: 'La oferta de servicio se comunica para atención a nivel nacional en los principales puntos de operación del cliente.',
+    summary: 'Los servicios pueden coordinarse a nivel nacional en los principales puntos de operación del cliente.',
     icon: MapPin
   }
 ];
@@ -310,7 +310,7 @@ export const faqs = [
   {
     question: '¿Atienden únicamente dentro de la Zona Libre de Colón?',
     answer:
-      'No. La empresa se comunica con cobertura en Colón y a nivel nacional, incluyendo las principales zonas francas, puertos, parques industriales, Panamá Pacífico y el aeropuerto de cargas en Tocumen.'
+      'No. K9 Security International atiende operaciones en Colón y a nivel nacional, incluyendo las principales zonas francas, puertos, parques industriales, Panamá Pacífico y el aeropuerto de cargas en Tocumen.'
   },
   {
     question: '¿Qué tipo de instalaciones y unidades pueden inspeccionar?',
@@ -330,7 +330,7 @@ export const faqs = [
   {
     question: '¿Qué respaldo institucional se muestra en la web?',
     answer:
-      'La web comunica que la empresa es una agencia de seguridad registrada en la DIASP y además muestra el certificado BASC actualizado con su número de certificación, fecha de expedición y norma aplicable.'
+      'K9 Security International, S.A. se identifica como una agencia de seguridad registrada en la DIASP y muestra su certificado BASC con número de certificación, fecha de expedición y norma aplicable.'
   }
 ];
 

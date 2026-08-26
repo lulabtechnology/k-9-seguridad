@@ -19,11 +19,15 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const service = getService(slug);
   if (!service) return {};
   return {
-    title: service.seoTitle,
+    title: { absolute: service.seoTitle },
     description: service.seoDescription,
+    alternates: {
+      canonical: `/servicios/${service.slug}`
+    },
     openGraph: {
       title: service.seoTitle,
       description: service.seoDescription,
+      url: `/servicios/${service.slug}`,
       images: [{ url: service.image }]
     }
   };

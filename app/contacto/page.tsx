@@ -8,7 +8,13 @@ import { site } from '@/lib/site';
 export const metadata: Metadata = {
   title: 'Contacto para servicios de seguridad K9',
   description:
-    'Solicite servicios de vigilancia, inspección K9 de cargas, control de contenedores y seguridad logística para empresas en Colón y Panamá.'
+    'Solicite servicios de vigilancia, inspección K9 de cargas, control de contenedores y seguridad logística para empresas en Colón y Panamá.',
+  alternates: {
+    canonical: '/contacto'
+  },
+  openGraph: {
+    url: '/contacto'
+  }
 };
 
 export default function ContactoPage() {

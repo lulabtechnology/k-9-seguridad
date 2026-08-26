@@ -39,7 +39,7 @@ const focusAreas = [
     icon: Dog
   },
   {
-    title: 'K9 Panama Security para carga',
+    title: 'Inspección K9 para carga en Panamá',
     text: 'Enfoque comercial y operativo para cargas de importación, exportación, contenedores, furgones, camiones y mercancía en tránsito.',
     icon: Truck
   },
@@ -69,6 +69,7 @@ export default function K9PanamaPage() {
       'Página enfocada en servicios de seguridad K9 en Panamá, inspección canina de cargas, custodia de mercancía y vigilancia para empresas logísticas.',
     isPartOf: { '@id': `${site.domain}/#website` },
     about: { '@id': `${site.domain}/#organization` },
+    disambiguatingDescription: site.identityDescription,
     inLanguage: 'es-PA',
     mainEntity: commercialUses.map((item) => ({
       '@type': 'Service',
@@ -100,9 +101,9 @@ export default function K9PanamaPage() {
       <section className="section section--light">
         <div className="container split-grid split-grid--center">
           <SectionIntro
-            eyebrow="Búsqueda directa: K9 Security Panamá"
-            title="Una opción especializada para empresas que necesitan seguridad K9 en Panamá."
-            text="La propuesta de K9 Security International se enfoca en operaciones comerciales y logísticas donde la prevención, la custodia, la inspección K9 y el control de mercancía son parte crítica del negocio."
+            eyebrow="Identidad: K9 Security International"
+            title="Una empresa especializada para operaciones que necesitan seguridad K9 en Panamá."
+            text="Para búsquedas como ‘K9 Security Panamá’ o ‘K9 Panamá’, este sitio corresponde a K9 Security International, S.A., empresa con identidad corporativa propia y base operativa en Colón. Sus servicios se enfocan en prevención, custodia, inspección K9 y control de mercancía."
           />
           <div className="info-card info-card--strong">
             <Building2 size={34} />
@@ -161,8 +162,8 @@ export default function K9PanamaPage() {
         <div className="container">
           <SectionIntro
             eyebrow="Servicios relacionados"
-            title="Servicios que fortalecen la presencia de K9 Security International en búsquedas de seguridad K9 Panamá."
-            text="Cada servicio cuenta con su propia página para ampliar la cobertura SEO y dirigir al cliente hacia una solución concreta."
+            title="Servicios especializados de K9 Security International para empresas en Panamá."
+            text="Cada servicio cuenta con información específica para que el cliente identifique la solución adecuada según su operación, carga, ubicación y nivel de control requerido."
             align="center"
           />
           <div className="cards-grid cards-grid--services">
@@ -187,8 +188,8 @@ export default function K9PanamaPage() {
         <div className="container">
           <SectionIntro
             eyebrow="Cobertura"
-            title="Presencia para búsquedas locales como K9 Panamá, seguridad K9 Colón y seguridad logística Panamá."
-            text="La página refuerza zonas de operación relevantes para empresas que buscan servicios de seguridad K9 y custodia en puntos estratégicos del país."
+            title="Cobertura para operaciones K9 en Panamá, Colón y puntos logísticos estratégicos."
+            text="K9 Security International atiende empresas que necesitan seguridad K9, custodia y control preventivo en puntos estratégicos del país."
             align="center"
           />
           <div className="sector-grid">

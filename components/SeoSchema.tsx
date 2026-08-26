@@ -10,32 +10,58 @@ export function SeoSchema() {
     'Parques industriales'
   ];
 
+  const organizationId = `${site.domain}/#organization`;
+  const websiteId = `${site.domain}/#website`;
+  const brandId = `${site.domain}/#brand`;
+
   const schema = {
     '@context': 'https://schema.org',
     '@graph': [
       {
+        '@type': 'Brand',
+        '@id': brandId,
+        name: site.shortName,
+        alternateName: site.aliases,
+        logo: `${site.domain}${site.logo}`,
+        url: site.domain
+      },
+      {
         '@type': ['Organization', 'LocalBusiness', 'ProfessionalService'],
-        '@id': `${site.domain}/#organization`,
+        '@id': organizationId,
         name: site.name,
         legalName: site.legalName,
         alternateName: site.aliases,
+        disambiguatingDescription: site.identityDescription,
         url: site.domain,
         logo: `${site.domain}${site.logo}`,
         image: `${site.domain}/images/k9/og-k9-security.jpg`,
+        brand: { '@id': brandId },
         telephone: site.whatsapp,
         description: site.description,
+        identifier: [
+          {
+            '@type': 'PropertyValue',
+            propertyID: 'BASC certificate',
+            value: site.basc.certificateNumber
+          }
+        ],
+        contactPoint: {
+          '@type': 'ContactPoint',
+          telephone: site.whatsapp,
+          contactType: 'sales',
+          areaServed: 'PA',
+          availableLanguage: ['es']
+        },
         address: {
           '@type': 'PostalAddress',
           streetAddress: 'France Field, Ave. 4, Zona Libre de Colón',
           addressLocality: 'Colón',
+          addressRegion: 'Colón',
           addressCountry: 'PA'
         },
         areaServed: areas,
         knowsAbout: [
-          'K9 Panamá',
-          'K9 Panama Security',
-          'K9 Security Panamá',
-          'Seguridad K9 Panamá',
+          'Seguridad K9 en Panamá',
           'Seguridad logística',
           'Inspección K9 de cargas',
           'Vigilancia 24 horas',
@@ -46,18 +72,19 @@ export function SeoSchema() {
       },
       {
         '@type': 'WebSite',
-        '@id': `${site.domain}/#website`,
+        '@id': websiteId,
         url: site.domain,
-        name: 'K9 Panamá | K9 Security International',
+        name: site.shortName,
         alternateName: site.aliases,
-        publisher: { '@id': `${site.domain}/#organization` },
+        publisher: { '@id': organizationId },
         inLanguage: 'es-PA'
       },
       ...services.map((service) => ({
         '@type': 'Service',
+        '@id': `${site.domain}/servicios/${service.slug}#service`,
         name: service.title,
         description: service.summary,
-        provider: { '@id': `${site.domain}/#organization` },
+        provider: { '@id': organizationId },
         areaServed: areas,
         url: `${site.domain}/servicios/${service.slug}`
       }))

@@ -8,7 +8,16 @@ import { processSteps, site, whatsappHref } from '@/lib/site';
 export const metadata: Metadata = {
   title: 'Empresa de seguridad logística en Colón y Panamá',
   description:
-    'Conozca K9 Security International, S.A., agencia de seguridad registrada en la DIASP con servicios de vigilancia, custodia e inspección K9 para cargas, bodegas, puertos y operaciones logísticas en Panamá.'
+    'Conozca K9 Security International, S.A., empresa independiente de seguridad registrada en la DIASP con servicios de vigilancia, custodia e inspección K9 para cargas, bodegas, puertos y operaciones logísticas en Panamá.',
+  alternates: {
+    canonical: '/empresa'
+  },
+  openGraph: {
+    title: 'K9 Security International, S.A. | Empresa de seguridad en Panamá',
+    description:
+      'Identidad corporativa, ubicación en Colón, respaldo BASC y servicios de seguridad logística de K9 Security International, S.A.',
+    url: '/empresa'
+  }
 };
 
 export default function EmpresaPage() {
@@ -22,7 +31,7 @@ export default function EmpresaPage() {
         <div className="container page-hero__content">
           <span className="eyebrow"><ShieldCheck size={18} /> Empresa</span>
           <h1>Seguridad especializada para comercio, logística y operaciones de carga.</h1>
-          <p>K9 Security International, S.A. se presenta como una agencia de seguridad registrada en la DIASP, con servicios de vigilancia, custodia e inspección K9 para empresas que manejan mercancía en Colón y a nivel nacional.</p>
+          <p>K9 Security International, S.A. es una agencia de seguridad registrada en la DIASP, con identidad corporativa propia y servicios de vigilancia, custodia e inspección K9 para empresas que manejan mercancía en Colón y a nivel nacional.</p>
         </div>
       </section>
 
@@ -31,7 +40,7 @@ export default function EmpresaPage() {
           <SectionIntro
             eyebrow="Presencia estratégica"
             title="Base operativa en Colón con alcance para puntos logísticos clave del país."
-            text="La empresa se ubica en un entorno comercial estratégico y comunica atención para operaciones en zonas francas, puertos, aeropuertos, parques industriales y rutas de carga donde la prevención es parte esencial de la operación diaria."
+            text="La empresa tiene su base operativa en Colón y atiende operaciones en zonas francas, puertos, aeropuertos, parques industriales y rutas de carga donde la prevención es parte esencial de la operación diaria."
           />
           <div className="info-card info-card--strong">
             <MapPin size={34} />
@@ -46,8 +55,8 @@ export default function EmpresaPage() {
         <div className="container values-grid">
           <article>
             <CheckCircle2 size={32} />
-            <h2>Enfoque preventivo</h2>
-            <p>La operación se comunica como una capa de control antes de que una carga, bodega o vehículo represente un riesgo para la empresa.</p>
+            <h2>Identidad corporativa propia</h2>
+            <p>K9 Security International, S.A. opera con su propia razón social e identidad corporativa desde Colón, Panamá. No es una sucursal, filial ni división de otras empresas con nombres similares.</p>
           </article>
           <article>
             <Award size={32} />
@@ -57,7 +66,7 @@ export default function EmpresaPage() {
           <article>
             <ShieldCheck size={32} />
             <h2>Registro y especialización</h2>
-            <p>La web comunica que la empresa es una agencia de seguridad registrada en la DIASP y especializada en operaciones logísticas, custodia, vigilancia 24 horas e inspección K9.</p>
+            <p>K9 Security International, S.A. se identifica como una agencia de seguridad registrada en la DIASP y especializada en operaciones logísticas, custodia, vigilancia 24 horas e inspección K9.</p>
           </article>
         </div>
       </section>

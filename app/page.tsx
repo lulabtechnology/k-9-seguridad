@@ -10,7 +10,7 @@ import { certifications, coverageZones, faqs, gallery, processSteps, sectors, se
 
 
 export const metadata: Metadata = {
-  title: 'K9 Panamá | Seguridad K9, vigilancia y custodia logística',
+  title: { absolute: 'K9 Panamá | Seguridad K9, vigilancia y custodia logística' },
   description:
     'K9 Security International, S.A. ofrece seguridad K9 en Panamá, inspección canina de cargas, vigilancia 24 horas y custodia de mercancía para empresas logísticas, bodegas, puertos y contenedores.',
   alternates: {
@@ -34,7 +34,7 @@ export default function HomePage() {
           <SectionIntro
             eyebrow="Empresa de seguridad K9 en Panamá"
             title="Especialistas en vigilancia, custodia e inspección K9 de cargas para operaciones de alto movimiento."
-            text="K9 Security International, S.A. se presenta como una empresa de seguridad K9 en Panamá registrada en la DIASP, con servicios para bodegas, puertos, aeropuertos, rutas de carga, zonas francas y empresas que necesitan prevención, control operativo y verificación profesional."
+            text="K9 Security International, S.A. es una empresa de seguridad K9 en Panamá registrada en la DIASP, con servicios para bodegas, puertos, aeropuertos, rutas de carga, zonas francas y empresas que necesitan prevención, control operativo y verificación profesional."
           />
           <div className="feature-panel">
             <span className="feature-panel__label">Cobertura comercial</span>
@@ -112,7 +112,7 @@ export default function HomePage() {
           <SectionIntro
             eyebrow="Cobertura nacional"
             title="Principales zonas francas y puntos estratégicos donde puede coordinar su servicio."
-            text="La web ahora deja claro que la oferta puede atender operaciones dentro y fuera de Colón, según la necesidad operativa del cliente."
+            text="K9 Security International atiende operaciones dentro y fuera de Colón, según la ubicación, el tipo de carga y la necesidad operativa del cliente."
             align="center"
           />
           <div className="sector-grid sector-grid--wide">
@@ -139,7 +139,7 @@ export default function HomePage() {
             <span className="eyebrow"><Award size={18} /> Respaldo BASC</span>
             <h2>Control documentado bajo estándares internacionales de seguridad.</h2>
             <p>
-              El certificado actualizado compartido por la empresa hace referencia a la Norma y Estándares Internacionales BASC, versión 6-2022, para servicios de custodia de seguridad, vigilancia privada e inspección canina en Colón y Panamá.
+              El certificado BASC de K9 Security International hace referencia a la Norma y Estándares Internacionales BASC, versión 6-2022, para servicios de custodia de seguridad, vigilancia privada e inspección canina en Colón y Panamá.
             </p>
             <div className="cert-grid">
               {certifications.map((item) => {
@@ -164,7 +164,7 @@ export default function HomePage() {
           <SectionIntro
             eyebrow="Galería operativa"
             title="Imágenes reales de inspección, vigilancia, custodia y control de carga."
-            text="Se incorporan fotografías reales para reforzar la credibilidad visual del servicio sin saturar la experiencia del sitio."
+            text="Fotografías reales de operaciones de inspección, vigilancia y custodia para mostrar de forma directa el trabajo realizado en campo."
             align="center"
           />
           <div className="gallery-grid">

@@ -7,7 +7,13 @@ import { services } from '@/lib/site';
 export const metadata: Metadata = {
   title: 'Servicios de vigilancia, custodia e inspección K9',
   description:
-    'Servicios de vigilancia 24 horas, custodia de mercancía, inspección K9 de cargas, inspección de contenedores y seguridad logística en Colón y Panamá.'
+    'Servicios de vigilancia 24 horas, custodia de mercancía, inspección K9 de cargas, inspección de contenedores y seguridad logística en Colón y Panamá.',
+  alternates: {
+    canonical: '/servicios'
+  },
+  openGraph: {
+    url: '/servicios'
+  }
 };
 
 export default function ServiciosPage() {

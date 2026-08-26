@@ -8,7 +8,13 @@ import { coverageZones, sectors, services } from '@/lib/site';
 export const metadata: Metadata = {
   title: 'Sectores atendidos y cobertura nacional',
   description:
-    'K9 Security International atiende empresas logísticas, bodegas, puertos, transporte terrestre, carga aérea, zonas francas y parques industriales en Colón y Panamá.'
+    'K9 Security International atiende empresas logísticas, bodegas, puertos, transporte terrestre, carga aérea, zonas francas y parques industriales en Colón y Panamá.',
+  alternates: {
+    canonical: '/sectores'
+  },
+  openGraph: {
+    url: '/sectores'
+  }
 };
 
 export default function SectoresPage() {
